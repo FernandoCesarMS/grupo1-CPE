@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Menu() {
+function Menu(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -103,10 +103,9 @@ function Menu() {
           />
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0} />
-      <TabPanel value={value} index={1} />
-      <TabPanel value={value} index={2} />
-      <TabPanel value={value} index={3} />
+      
+      {props.children}
+
     </div>
   );
 }
