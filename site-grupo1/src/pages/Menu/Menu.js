@@ -74,7 +74,7 @@ function Menu(props) {
             }}
           />
           <Tab
-            label="Historia"
+            label="História"
             {...a11yProps(4)}
             onClick={() => {
               history.push("Historia");
