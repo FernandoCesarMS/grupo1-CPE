@@ -1,0 +1,13 @@
+.baseLOG{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.corpoLOG{
+    width: 40%;
+    margin: 0 auto;
+}
+
