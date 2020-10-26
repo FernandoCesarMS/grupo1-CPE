@@ -75,7 +75,7 @@ function Personagem() {
                     <Card.Body>
                         <Card.Title>Humano</Card.Title>
                         <Card.Text>
-                            A raça mais paia que tem.
+                            A raça mais numerosa em Manatee, sem habilidades natas mas com altíssima destreza e tática em batalhas.
                         </Card.Text>
                         <Button variant="primary">Escolher</Button>
                     </Card.Body>
@@ -89,7 +89,7 @@ function Personagem() {
                     <Card.Body>
                         <Card.Title>Mago</Card.Title>
                         <Card.Text>
-                            umas bruxaria doida.
+                            Se utilizam da magia primitiva e da alquimia para lutar e auxiliar seus governantes, podendo agir com passividade ou agressividade.
                         </Card.Text>
                         <Button variant="primary">Escolher</Button>
                     </Card.Body>
@@ -99,7 +99,7 @@ function Personagem() {
                     <Card.Body>
                         <Card.Title>Guerreiro</Card.Title>
                         <Card.Text>
-                            A glr porradeira.
+                            Detentores de grandes triunfos em batalhas e dominadores da arte da guerra. Por onde passam realizam uma verdadeira carnificina caso precisem lutar.
                         </Card.Text>
                         <Button variant="primary">Escolher</Button>
                     </Card.Body>
@@ -109,7 +109,7 @@ function Personagem() {
                     <Card.Body>
                         <Card.Title>Ladino</Card.Title>
                         <Card.Text>
-                            Hoje eu sou ladrao artigo 157.
+                            Furtivos por natureza e sagazes de nascimento. Aquele que nasce ou ingressa no clã dos ladinos certamente fatura em cima de qualquer um, mas toda atitude tem seu preço. Não espere ser menos que um intineirante de feudos e tavernas.
                         </Card.Text>
                         <Button variant="primary">Escolher</Button>
                     </Card.Body>
@@ -119,7 +119,7 @@ function Personagem() {
                     <Card.Body>
                         <Card.Title>Necromante</Card.Title>
                         <Card.Text>
-                            Ressucita defunto.
+                            Conhecedores das artes das trevas, os necromantes certamente não pensam duas vezes antes de atacar quando precisam. Cuidado ao passar em travessias e pontes, pois se deparar com um te exige um alto preço.
                         </Card.Text>
                         <Button variant="primary">Escolher</Button>
                     </Card.Body>
@@ -129,15 +129,16 @@ function Personagem() {
                     <Card.Body>
                         <Card.Title>Clérigo</Card.Title>
                         <Card.Text>
-                            Uns padre vida loka.
-                        </Card.Text>
-                        <Button variant="primary">Escolher</Button>
+                            Dizem que esse tipo de guerreiro carrega consigo a mão de Deus e o poder dos seres celestiais nas batalhas. Há quem acredite e há quem pague pra ver e tenha a própria vida como preço.
+                            <Button variant="primary">Escolher</Button>
+                        </Card.Text>          
                     </Card.Body>
-                </Card>
+                </Card>  
             </div>
 
             <div>
                 <br />
+                <center>
                 <Button
                     variant="primary"
                     type="login"
@@ -146,6 +147,8 @@ function Personagem() {
                     }}>
                     CRIAR
           </Button>
+                </center>
+                
             </div>
         </div>
     );
