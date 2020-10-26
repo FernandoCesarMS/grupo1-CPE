@@ -13,6 +13,7 @@ function Routes() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/Login" component={inserirMenu} />
+        <Route exact path="/Personagem" component={inserirMenu} />
         <Route exact path="/Cadastro" component={inserirMenu} />
         <Route exact path="/Historia" component={inserirMenu} />
         <Route exact path="/Perfil" component={inserirMenu} />
