@@ -74,7 +74,7 @@ function Cadastro() {
                 alert("Senhas diferentes!");
               else {
                 alert("Cadastrado!");
-                history.push("/Login");
+                history.push("Personagem");
               }
             }}>
             Cadastrar

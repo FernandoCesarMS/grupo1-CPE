@@ -6,6 +6,10 @@ function Perfil() {
       <center>
         <h1>Perfil</h1>
       </center>
+      <p>Nome: </p>
+      <p>Gênero: </p>
+      <p>Raça: </p>
+      <p>Classe: </p>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Perfil from "./pages/Perfil";
 import Menu from "./pages/Menu";
+import Personagem from "./pages/Personagem";
 
 function Routes() {
   return (
@@ -31,6 +32,7 @@ function inserirMenu() {
         <Route exact path="/Cadastro" component={Cadastro} />
         <Route exact path="/Historia" component={Historia} />
         <Route exact path="/Perfil" component={Perfil} />
+        <Route exact path="/Personagem" component={Personagem} />
         <Route component={() => <Redirect to="/Home" />} />
       </Switch>
     </Menu>
