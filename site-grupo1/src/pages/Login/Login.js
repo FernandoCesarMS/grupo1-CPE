@@ -9,8 +9,6 @@ function Login() {
   return (
     <div className="baseLOG">
       <div className="corpoLOG">
-    
-        <h1>Login</h1>
         <Form>
           <Form.Group controlId="username">
             <Form.Label>Nome de usuário</Form.Label>
@@ -32,6 +30,7 @@ function Login() {
           </Button>
 
           <br/>
+          <br />
           <input id="logar" type="checkbox"/>
           <label htmlFor="logar">Mantenha-me logado</label>
 

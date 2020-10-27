@@ -4,6 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(rgb(109, 202, 202), white);
 }
 
 .corpoLOG{

@@ -67,13 +67,6 @@ function Menu(props) {
           centered
         >
           <Tab
-            label="Home"
-            {...a11yProps(0)}
-            onClick={() => {
-              history.push("Home");
-            }}
-          />
-          <Tab
             label="História"
             {...a11yProps(4)}
             onClick={() => {
@@ -85,6 +78,13 @@ function Menu(props) {
             {...a11yProps(2)}
             onClick={() => {
               history.push("Perfil");
+            }}
+          />
+          <Tab
+            label="Home"
+            {...a11yProps(0)}
+            onClick={() => {
+              history.push("Home");
             }}
           />
           <Tab

@@ -12,10 +12,6 @@ function Cadastro() {
   return (
     <div className="baseCAD">
       <div className="corpoCAD">
-        <center>
-          <h1>Cadastro</h1>
-        </center>
-
         <Form>
           <Form.Group controlId="Nome">
             <Form.Label>Nome Completo</Form.Label>
@@ -86,4 +82,3 @@ function Cadastro() {
 }
 
 export default Cadastro;
-
