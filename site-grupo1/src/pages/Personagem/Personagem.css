@@ -1,11 +1,13 @@
-.Container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.basePERS {
+    height: 100%;
+    background-color: rgb(212, 212, 212);
 }
-.escolha-person2 {
+
+.escolha-person {
     display: flex;
     flex-direction: column;
-    }
+}
+
+.gender {
+    max-width: 600px;
+}
