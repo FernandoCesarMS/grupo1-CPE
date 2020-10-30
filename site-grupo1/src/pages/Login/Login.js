@@ -9,6 +9,7 @@ function Login() {
   return (
     <div className="baseLOG">
       <div className="corpoLOG">
+        <h1>Login</h1>
         <Form>
           <Form.Group controlId="username">
             <Form.Label>Nome de usuário</Form.Label>
@@ -29,8 +30,7 @@ function Login() {
             LOGIN
           </Button>
 
-          <br/>
-          <br />
+          <br /> <br />
           <input id="logar" type="checkbox"/>
           <label htmlFor="logar">Mantenha-me logado</label>
 
@@ -38,6 +38,7 @@ function Login() {
             <p>Ainda não tem uma conta? </p>
             <Link to="/Cadastro">Criar uma nova conta</Link>
           </center>
+          
         </Form>
       </div>
     </div>

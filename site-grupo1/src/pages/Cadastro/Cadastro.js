@@ -1,7 +1,8 @@
-import React from "react";
+import  React from "react";
+import { useState } from "react";
 import { Form, Button, Col } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
-import { useState } from "react";
+import Campo from "./Campo";
 import "./Cadastro.css";
 
 function Cadastro() {
@@ -12,33 +13,17 @@ function Cadastro() {
   return (
     <div className="baseCAD">
       <div className="corpoCAD">
+        <h1>Cadastro</h1>
         <Form>
-          <Form.Group controlId="Nome">
-            <Form.Label>Nome Completo</Form.Label>
-            <Form.Control placeholder="Nome completo" />
-          </Form.Group>
+          <Campo col={0} id="Nome" label="Nome Completo"/>
 
           <Form.Row>
-            <Form.Group as={Col} controlId="Idade">
-              <Form.Label>Idade</Form.Label>
-              <Form.Control placeholder="Idade" />
-            </Form.Group>
-
-            <Form.Group as={Col} controlId="CPF">
-              <Form.Label>CPF</Form.Label>
-              <Form.Control placeholder="CPF" />
-            </Form.Group>
+            <Campo col={1} id="Idade" label="Idade"/>
+            <Campo col={1} id="CPF" label="CPF"/>
           </Form.Row>
 
-          <Form.Group controlId="Username">
-            <Form.Label>Nome de usuário</Form.Label>
-            <Form.Control placeholder="Nome de usuário" />
-          </Form.Group>
-
-          <Form.Group controlId="Email">
-            <Form.Label>Email</Form.Label>
-            <Form.Control placeholder="Endereço de email" />
-          </Form.Group>
+          <Campo col={0} id="Nome de usuário" label="Nome de usuário"/>
+          <Campo col={0} id="Endereço de email" label="Endereço de email"/>
 
           <Form.Row>
             <Form.Group as={Col} controlId="Senha">
