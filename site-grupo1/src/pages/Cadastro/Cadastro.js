@@ -4,7 +4,12 @@ import { Form, Button, Col } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import Campo from "./Campo";
 import "./Cadastro.css";
-
+/*
+A página Cadastro tem como função possibilitar a criação de um perfil pelo usuário
+com dados como Nome, Idade, CPF etc.
+A implementação, atualmente, utiliza o componente Campo, com alguns componentes
+do framework Bootstrap
+*/
 function Cadastro() {
   const [senha1, setSenha1] = useState(0);
   const [senha2, setSenha2] = useState(1);

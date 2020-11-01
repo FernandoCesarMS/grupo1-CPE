@@ -7,7 +7,12 @@ import Login from "./pages/Login";
 import Perfil from "./pages/Perfil";
 import Menu from "./pages/Menu";
 import Personagem from "./pages/Personagem";
+/*
+Página que implementa as rotas entre as páginas e adiciona o menu superior
+em todas as páginas
+*/
 
+// Função que organiza as rotas
 function Routes() {
   return (
     <BrowserRouter>
@@ -24,6 +29,7 @@ function Routes() {
   );
 }
 
+// Função que insere o menu nas páginas
 function inserirMenu() {
   return (
     <Menu>
@@ -34,6 +40,7 @@ function inserirMenu() {
         <Route exact path="/Historia" component={Historia} />
         <Route exact path="/Perfil" component={Perfil} />
         <Route exact path="/Personagem" component={Personagem} />
+        {/* A linha abaixo redireciona qualquer outro codigo para a página home */}
         <Route component={() => <Redirect to="/Home" />} />
       </Switch>
     </Menu>

@@ -10,6 +10,12 @@ import {
   Box,
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+
+/*
+Código do menu superior que aparece em todas as páginas
+A implementação, atualmente, utiliza o framework material
+*/
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
