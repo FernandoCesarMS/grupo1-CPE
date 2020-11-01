@@ -35,7 +35,7 @@ function Personagem() {
         <div class="card-group">
           <Cartao
             widthC="18rem"
-            img="images/elfopng.png"
+            img="images/Cla/elfopng.png"
             name="Aburame"
             text="Caracterizados pelo uso de insetos como armas. Ao nascer, os membros deste  
             clã são oferecidos a uma raça especial de insetos, como o kikaichū como um  
@@ -45,7 +45,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/druid-female-png.png"
+            img="images/Cla/druid-female-png.png"
             name="Akimichi"
             text="Conseguem converter chakra em caloria, por serem mais adaptados a um corpo obeso,  
             no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
@@ -55,7 +55,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/anão-png.png"
+            img="images/Cla/anão-png.png"
             name="Hyuuga"
             text="Todos os membros nascidos neste clã possuem o Byakugan, um kekkei genkai que lhes dá  
             campos extensos de visão e a capacidade de ver através de objetos sólidos e até mesmo  
@@ -64,7 +64,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/orc-png.png"
+            img="images/Cla/orc-png.png"
             name="Inuzuka"
             text="Conhecida por seu uso de cães ninjas como companheiros de luta e são facilmente  
             identificados pelas distintas presas vermelhas marcadas em suas bochechas."
@@ -72,7 +72,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/human-png.png"
+            img="images/Cla/human-png.png"
             name="Nara"
             text="O clã Nara é conhecido por sua inteligência, ninjutsu que envolve a manipulação  
             de sombras, e cuidando de veados que pastam em uma grande área de da floresta  
@@ -85,49 +85,7 @@ function Personagem() {
         <div class="card-group">
           <Cartao
             widthC="18rem"
-            img="images/elfopng.png"
-            name="Aburame"
-            text="Caracterizados pelo uso de insetos como armas. Ao nascer, os membros deste  
-            clã são oferecidos a uma raça especial de insetos, como o kikaichū como um  
-            ninho, residente apenas sob a pele de seu hospedeiro. Esses insetos, então,  
-            vivem em simbiose com seu hospedeiro."
-          />
-
-          <Cartao
-            widthC="18rem"
-            img="images/druid-female-png.png"
-            name="Akimichi"
-            text="Conseguem converter chakra em caloria, por serem mais adaptados a um corpo obeso,  
-            no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
-            A força física e velocidade também são drasticamente aumentadas com a expansão,  
-            permitindo socos esmagadores com a expansão do punho."
-          />
-
-          <Cartao
-            widthC="18rem"
-            img="images/anão-png.png"
-            name="Hyuuga"
-            text="Todos os membros nascidos neste clã possuem o Byakugan, um kekkei genkai que lhes dá  
-            campos extensos de visão e a capacidade de ver através de objetos sólidos e até mesmo  
-            o sistema circulatório chakra, entre outras coisas."
-          />
-
-          <Cartao
-            widthC="18rem"
-            img="images/orc-png.png"
-            name="Inuzuka"
-            text="Conhecida por seu uso de cães ninjas como companheiros de luta e são facilmente  
-            identificados pelas distintas presas vermelhas marcadas em suas bochechas."
-          />
-          <br />
-        </div>
-      </div>
-      <div className="escolha-person">
-        <h3>Escolha uma classe:</h3>
-        <div class="card-group">
-          <Cartao
-            widthC="18rem"
-            img="images/mago-png.png"
+            img="images/Cla/elfopng.png"
             name="Sarutobi"
             text="Produziu vários membros notáveis que ocuparam posições de grande autoridade,  
             como Hokage, e membros dos Doze Guardiões Ninja. Todos os membros conhecidos  
@@ -136,7 +94,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/guerreiro-png.png"
+            img="images/Cla/druid-female-png.png"
             name="Uchiha"
             text="Possuem habilidades com armas ninja, jutsus com uso do fogo, além de serem  
             portadores do kekkei genkai Sharingan, que lhes permite ganhar diversas  
@@ -146,7 +104,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/ladino-png.png"
+            img="images/Cla/anão-png.png"
             name="Uzumaki"
             text="Os membros deste clã são muito versados na arte de fūinjutsu. Os membros  
             deste clã possuem incrível longevidade e força de vida. Além disso, possuem  
@@ -156,7 +114,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/necromante-png.png"
+            img="images/Cla/orc-png.png"
             name="Yamanaka"
             text="Eles são especializados em técnicas relacionadas com a mente, portanto têm  
             muito inteligência e uma capacidade cerebral muito avançada. Membros desse  
@@ -164,10 +122,50 @@ function Personagem() {
             este clã ganhou destaque por sua facilidade em retirar informações de  
             bases inimigas."
           />
+          <br />
+        </div>
+      </div>
+      <div className="escolha-person">
+        <h3>Escolha uma classe:</h3>
+        <div class="card-group">
+          <Cartao
+            widthC="18rem"
+            img="images/Cla/mago-png.png"
+            name="Mago"
+            text="Se utilizam da magia primitiva e da alquimia para lutar e 
+            auxiliar seus governantes, podendo agir com passividade ou agressividade."
+          />
 
           <Cartao
             widthC="18rem"
-            img="images/clerigo-png.png"
+            img="images/Cla/guerreiro-png.png"
+            name="Guerreiro"
+            text="Detentores de grandes triunfos em batalhas e dominadores da arte da guerra.  
+            Por onde passam realizam uma verdadeira carnificina caso precisem lutar."
+          />
+
+          <Cartao
+            widthC="18rem"
+            img="images/Cla/ladino-png.png"
+            name="Ladino"
+            text="Furtivos por natureza e sagazes de nascimento. Aquele que nasce 
+            ou ingressa no clã dos ladinos certamente fatura em cima de 
+            qualquer um, mas toda atitude tem seu preço. Não espere ser 
+            menos que um intineirante de feudos e tavernas."
+          />
+
+          <Cartao
+            widthC="18rem"
+            img="images/Cla/necromante-png.png"
+            name="Necromante"
+            text="Conhecedores das artes das trevas, os necromantes certamente não 
+            pensam duas vezes antes de atacar quando precisam. Cuidado ao 
+            passar em travessias e pontes, pois se deparar com um te exige alto preço"
+          />
+
+          <Cartao
+            widthC="18rem"
+            img="images/Cla/clerigo-png.png"
             name="Clérigo"
             text="Dizem que esse tipo de guerreiro carrega consigo a mão de Deus e
             o poder dos seres celestiais nas batalhas. Há quem acredite e há
