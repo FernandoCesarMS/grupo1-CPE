@@ -1,11 +1,19 @@
 import React from "react";
+import Story from "./Story";
+import "./Historia.css";
 
 function Historia() {
   return (
-    <div>
-      <center>
+    <div className="baseHIST">
+      <div className="corpoHIST">
+        <center>
         <h1>História</h1>
-      </center>
+          <img src="/images/historiarpg-png.png" />
+        </center>
+
+        <br /> <br /> <br />
+        <Story />
+      </div>
     </div>
   );
 }

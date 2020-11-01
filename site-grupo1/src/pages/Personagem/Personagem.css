@@ -1,0 +1,13 @@
+.basePERS {
+    height: 100%;
+    background-color: rgb(212, 212, 212);
+}
+
+.escolha-person {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender {
+    max-width: 600px;
+}

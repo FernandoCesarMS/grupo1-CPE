@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Menu.css";
 import {
   makeStyles,
   AppBar,
@@ -58,55 +59,55 @@ function Menu(props) {
   const history = useHistory();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="menu-superior"
-          centered
-        >
-          <Tab
-            label="Home"
-            {...a11yProps(0)}
-            onClick={() => {
-              history.push("Home");
-            }}
-          />
-          <Tab
-            label="História"
-            {...a11yProps(4)}
-            onClick={() => {
-              history.push("Historia");
-            }}
-          />
-          <Tab
-            label="Perfil"
-            {...a11yProps(2)}
-            onClick={() => {
-              history.push("Perfil");
-            }}
-          />
-          <Tab
-            label="Login"
-            {...a11yProps(3)}
-            onClick={() => {
-              history.push("Login");
-            }}
-          />
-          <Tab
-            label="Cadastro"
-            {...a11yProps(1)}
-            onClick={() => {
-              history.push("Cadastro");
-            }}
-          />
-        </Tabs>
-      </AppBar>
-      
-      {props.children}
+      <div className={classes.root}>
+        <AppBar position="static">
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="menu-superior"
+            centered
+          >
+            <Tab
+              label="História"
+              {...a11yProps(4)}
+              onClick={() => {
+                history.push("Historia");
+              }}
+            />
+            <Tab
+              label="Perfil"
+              {...a11yProps(2)}
+              onClick={() => {
+                history.push("Perfil");
+              }}
+            />
+            <Tab
+              label="Home"
+              {...a11yProps(0)}
+              onClick={() => {
+                history.push("Home");
+              }}
+            />
+            <Tab
+              label="Login"
+              {...a11yProps(3)}
+              onClick={() => {
+                history.push("Login");
+              }}
+            />
+            <Tab
+              label="Cadastro"
+              {...a11yProps(1)}
+              onClick={() => {
+                history.push("Cadastro");
+              }}
+            />
+          </Tabs>
+        </AppBar>
+        
+        {props.children}
 
-    </div>
+      </div>
   );
 }
 

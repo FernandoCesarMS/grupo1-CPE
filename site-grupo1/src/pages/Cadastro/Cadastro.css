@@ -1,0 +1,13 @@
+.baseCAD{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(109, 202, 202), white);
+}
+
+.corpoCAD{
+    width: 50%;
+    margin: 0 auto;
+}

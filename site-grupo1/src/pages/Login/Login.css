@@ -1,0 +1,14 @@
+.baseLOG{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(109, 202, 202), white, rgb(109, 202, 202));
+}
+
+.corpoLOG{
+    width: 40%;
+    margin: 0 auto;
+}
+

@@ -1,7 +1,9 @@
 import React from "react";
+import "./Home.css";
+
 function Home() {
   return (
-    <div>
+    <div className = "baseHOME" >
       <center>
         <h1>Home</h1>
       </center>
