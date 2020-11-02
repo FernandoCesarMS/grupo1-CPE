@@ -1,5 +1,23 @@
-.basePERFIL{
+.basePERFIL {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgb(109, 202, 202),
+    white,
+    rgb(109, 202, 202)
+  );
+}
 
-    background-image: linear-gradient(rgb(109, 202, 202), white);
+.title {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+}
+
+.body {
+  position: absolute;
 
 }
