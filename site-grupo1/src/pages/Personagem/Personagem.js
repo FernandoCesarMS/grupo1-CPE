@@ -24,8 +24,8 @@ function Personagem() {
         {/* Foi utilizado o "class='card-group'", pois ele permite a organização dos
         cartões no esquema de coluna */}
         <div class="card-group">
-          <Cartao widthC="10rem" img="images/shinobi4.png" name="Shinobi" />
-          <Cartao widthC="10rem" img="images/kunoichi4.png" name="Kunoichi" />
+          <Cartao widthC="10rem" img="images/Personagem/Genero/shinobi4.png" name="Shinobi" />
+          <Cartao widthC="10rem" img="images/Personagem/Genero/kunoichi4.png" name="Kunoichi" />
         </div>
       </div>
       {/* Div que contém a escolha do Clã */}
@@ -35,7 +35,7 @@ function Personagem() {
         <div class="card-group">
           <Cartao
             widthC="18rem"
-            img="images/akimichi1.png"
+            img="images/Personagem/Cla/akimichi1.png"
             name="Akimichi"
             text="Conseguem converter chakra em caloria, por serem mais adaptados a um corpo obeso,  
             no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
@@ -45,7 +45,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/hyuga.png"
+            img="images/Personagem/Cla/hyuga.png"
             name="Hyuga"
             text="Todos os membros nascidos neste clã possuem o Byakugan, um poderoso kekkei genkai que lhes dá  
             campos extensos de visão e a capacidade de ver através de objetos sólidos e até mesmo  
@@ -55,7 +55,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/inuzuka.png"
+            img="images/Personagem/Cla/inuzuka.png"
             name="Inuzuka"
             text="Conhecida por seu uso de cães ninjas como companheiros de luta e são facilmente  
             identificados pelas distintas presas vermelhas marcadas em suas bochechas, símbolo de 
@@ -65,7 +65,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/uchiha.png"
+            img="images/Personagem/Cla/uchiha.png"
             name="Uchiha"
             text="Possuem habilidades com armas ninja de arremesso, jutsus com uso do fogo, além  
             de serem portadores do kekkei genkai Sharingan, que lhes permite ganhar diversas vantagens,  
@@ -75,7 +75,7 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/uzumaki.png"
+            img="images/Personagem/Cla/uzumaki.png"
             name="Uzumaki"
             text="Os membros deste clã possuem habilidade na arte de fūinjutsu, técnica de selamento  
             de objetos, chakra e seres vivos. Os membros deste clã possuem incrível longevidade e  
@@ -84,7 +84,7 @@ function Personagem() {
           />
           <Cartao
             widthC="18rem"
-            img="images/yamanaka.png"
+            img="images/Personagem/Cla/yamanaka.png"
             name="Yamanaka"
             text="Eles são especializados em técnicas relacionadas com a mente, portanto têm  
             muito inteligência e uma capacidade cerebral muito avançada. Membros desse  
@@ -101,16 +101,16 @@ function Personagem() {
         <div class="card-group">
           <Cartao
             widthC="18rem"
-            img="images/ninjutsu.png" 
-            name="Ninjutsu" 
+            img="images/Personagem/Tecnica/ninjutsu.png"
+            name="Ninjutsu"
             text="O Ninjutsu molda o chakra de acordo com o que o usuário deseja, podendo combinar
              com elementos da natureza, usar para cura ou outra das diversas possibilidades."
           />
 
           <Cartao
             widthC="18rem"
-            img="images/taijutsu.png" 
-            name="Taijutsu" 
+            img="images/Personagem/Tecnica/taijutsu.png"
+            name="Taijutsu"
             text="O Taijutsu é uma forma básica de técnicas e refere-se a qualquer técnica que 
             envolva artes marciais ou a otimização das habilidades humanas naturais. Não requer 
             uso de chakra."
@@ -118,8 +118,8 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/genjutsu.png" 
-            name="Genjutsu" 
+            img="images/Personagem/Tecnica/genjutsu.png"
+            name="Genjutsu"
             text="O Genjutsu controla o fluxo de chakra no cérebro do oponente causando uma 
             pertubação dos sentidos, induzindo a pessoa a sentir dor ou algum trauma e afetar 
             seu psicológico."
