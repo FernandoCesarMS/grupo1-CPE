@@ -24,37 +24,18 @@ function Personagem() {
         {/* Foi utilizado o "class='card-group'", pois ele permite a organização dos
         cartões no esquema de coluna */}
         <div class="card-group">
-          <Cartao
-            widthC="10rem"
-            img="images/masculino-png.png"
-            name="Masculino"
-          />
-          <Cartao
-            widthC="10rem"
-            img="images/feminino-png.png"
-            name="Feminino"
-          />
+          <Cartao widthC="10rem" img="images/shinobi4.png" name="Shinobi" />
+          <Cartao widthC="10rem" img="images/kunoichi4.png" name="Kunoichi" />
         </div>
       </div>
-      {/* Div que contém a escolha do Clã, foi dividido em dois card-groups. 
-        Cada um desses card-groups representa uma linha */}
+      {/* Div que contém a escolha do Clã */}
       <div className="escolha-person1">
         <h3>Escolha um Clã:</h3>
         {/* Primeira linha da escolha de personagens */}
         <div class="card-group">
           <Cartao
             widthC="18rem"
-            img="images/Cla/Aburame.jpg"
-            name="Aburame"
-            text="Caracterizados pelo uso de insetos como armas. Ao nascer, os membros deste  
-            clã são oferecidos a uma raça especial de insetos, como o kikaichū como um  
-            ninho, residente apenas sob a pele de seu hospedeiro. Esses insetos, então,  
-            vivem em simbiose com seu hospedeiro."
-          />
-
-          <Cartao
-            widthC="18rem"
-            img="images/Cla/Akimichi.png"
+            img="images/akimichi1.png"
             name="Akimichi"
             text="Conseguem converter chakra em caloria, por serem mais adaptados a um corpo obeso,  
             no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
@@ -64,67 +45,46 @@ function Personagem() {
 
           <Cartao
             widthC="18rem"
-            img="images/Cla/Hyuuga.png"
-            name="Hyuuga"
-            text="Todos os membros nascidos neste clã possuem o Byakugan, um kekkei genkai que lhes dá  
+            img="images/hyuga.png"
+            name="Hyuga"
+            text="Todos os membros nascidos neste clã possuem o Byakugan, um poderoso kekkei genkai que lhes dá  
             campos extensos de visão e a capacidade de ver através de objetos sólidos e até mesmo  
-            o sistema circulatório chakra, entre outras coisas."
+            o sistema circulatório chakra, sendo uma importante ténica de ataque, onde é focado nos  
+            pontos de chakra mais importantes."
           />
 
           <Cartao
             widthC="18rem"
-            img="images/Cla/Inuzuka.jpg"
+            img="images/inuzuka.png"
             name="Inuzuka"
             text="Conhecida por seu uso de cães ninjas como companheiros de luta e são facilmente  
-            identificados pelas distintas presas vermelhas marcadas em suas bochechas."
+            identificados pelas distintas presas vermelhas marcadas em suas bochechas, símbolo de 
+            seu clã. Possuem habilidade de rastreamento através do faro, muito útil na perseguição 
+            de um inimigo."
           />
 
           <Cartao
             widthC="18rem"
-            img="images/Cla/Nara.jpg"
-            name="Nara"
-            text="O clã Nara é conhecido por sua inteligência, ninjutsu que envolve a manipulação  
-            de sombras, e cuidando de veados que pastam em uma grande área de da floresta  
-            do clã Nara."
-          />
-          <br />
-        </div>
-      </div>
-      {/* Segunda linha da escolha de personagens */}
-      <div className="escolha-person1">
-        <div class="card-group">
-          <Cartao
-            widthC="18rem"
-            img="images/Cla/Sarutobi.jpg"
-            name="Sarutobi"
-            text="Produziu vários membros notáveis que ocuparam posições de grande autoridade,  
-            como Hokage, e membros dos Doze Guardiões Ninja. Todos os membros conhecidos  
-            também têm sido observados como devotos da Vontade do Fogo."
-          />
-
-          <Cartao
-            widthC="18rem"
-            img="images/Cla/Uchiha.jpg"
+            img="images/uchiha.png"
             name="Uchiha"
-            text="Possuem habilidades com armas ninja, jutsus com uso do fogo, além de serem  
-            portadores do kekkei genkai Sharingan, que lhes permite ganhar diversas  
-            vantagens em batalha, como copiar jutsus, percepção avançada, e diversas  
+            text="Possuem habilidades com armas ninja de arremesso, jutsus com uso do fogo, além  
+            de serem portadores do kekkei genkai Sharingan, que lhes permite ganhar diversas vantagens,  
+            como copiar jutsus do oponente, percepção avançada em camo de batalha, e outras várias  
             técnicas que podem ser aprimoradas."
           />
 
           <Cartao
             widthC="18rem"
-            img="images/Cla/Uzumaki.jpg"
+            img="images/uzumaki.png"
             name="Uzumaki"
-            text="Os membros deste clã são muito versados na arte de fūinjutsu. Os membros  
-            deste clã possuem incrível longevidade e força de vida. Além disso, possuem  
-            grandes reservas de chakra e uma recuperação incrivelmente rápida após  
-            serem feridos."
+            text="Os membros deste clã possuem habilidade na arte de fūinjutsu, técnica de selamento  
+            de objetos, chakra e seres vivos. Os membros deste clã possuem incrível longevidade e  
+            força de vida. Além disso, possuem grandes reservas de chakra e uma recuperação  
+            incrivelmente rápida após serem feridos."
           />
-
           <Cartao
             widthC="18rem"
-            img="images/Cla/Yamanaka.png"
+            img="images/yamanaka.png"
             name="Yamanaka"
             text="Eles são especializados em técnicas relacionadas com a mente, portanto têm  
             muito inteligência e uma capacidade cerebral muito avançada. Membros desse  
@@ -137,50 +97,32 @@ function Personagem() {
       </div>
       {/* Div que contêm a escolha de classe */}
       <div className="escolha-person">
-        <h3>Escolha uma classe:</h3>
+        <h3>Escolha uma técnica:</h3>
         <div class="card-group">
           <Cartao
             widthC="18rem"
-            img="images/Cla/mago-png.png"
-            name="Mago"
-            text="Se utilizam da magia primitiva e da alquimia para lutar e 
-            auxiliar seus governantes, podendo agir com passividade ou agressividade."
+            img="images/ninjutsu.png" 
+            name="Ninjutsu" 
+            text="O Ninjutsu molda o chakra de acordo com o que o usuário deseja, podendo combinar
+             com elementos da natureza, usar para cura ou outra das diversas possibilidades."
           />
 
           <Cartao
             widthC="18rem"
-            img="images/Cla/guerreiro-png.png"
-            name="Guerreiro"
-            text="Detentores de grandes triunfos em batalhas e dominadores da arte da guerra.  
-            Por onde passam realizam uma verdadeira carnificina caso precisem lutar."
+            img="images/taijutsu.png" 
+            name="Taijutsu" 
+            text="O Taijutsu é uma forma básica de técnicas e refere-se a qualquer técnica que 
+            envolva artes marciais ou a otimização das habilidades humanas naturais. Não requer 
+            uso de chakra."
           />
 
           <Cartao
             widthC="18rem"
-            img="images/Cla/ladino-png.png"
-            name="Ladino"
-            text="Furtivos por natureza e sagazes de nascimento. Aquele que nasce 
-            ou ingressa no clã dos ladinos certamente fatura em cima de 
-            qualquer um, mas toda atitude tem seu preço. Não espere ser 
-            menos que um intineirante de feudos e tavernas."
-          />
-
-          <Cartao
-            widthC="18rem"
-            img="images/Cla/necromante-png.png"
-            name="Necromante"
-            text="Conhecedores das artes das trevas, os necromantes certamente não 
-            pensam duas vezes antes de atacar quando precisam. Cuidado ao 
-            passar em travessias e pontes, pois se deparar com um te exige alto preço"
-          />
-
-          <Cartao
-            widthC="18rem"
-            img="images/Cla/clerigo-png.png"
-            name="Clérigo"
-            text="Dizem que esse tipo de guerreiro carrega consigo a mão de Deus e
-            o poder dos seres celestiais nas batalhas. Há quem acredite e há
-            quem pague pra ver e tenha a própria vida como preço."
+            img="images/genjutsu.png" 
+            name="Genjutsu" 
+            text="O Genjutsu controla o fluxo de chakra no cérebro do oponente causando uma 
+            pertubação dos sentidos, induzindo a pessoa a sentir dor ou algum trauma e afetar 
+            seu psicológico."
           />
         </div>
       </div>
