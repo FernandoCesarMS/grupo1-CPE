@@ -11,12 +11,6 @@
   );
 }
 
-.title {
-  position: absolute;
-  top: 100px;
-  text-align: center;
-}
-
 .body {
   position: absolute;
 
