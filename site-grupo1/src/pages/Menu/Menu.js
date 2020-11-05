@@ -69,7 +69,7 @@ function Menu(props) {
   return (
     
       <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Tabs
             value={value}
             onChange={handleChange}
