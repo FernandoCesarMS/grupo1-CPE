@@ -19,7 +19,8 @@ A implementação, atualmente, utiliza o framework material
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
-    <div
+    
+    <div 
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
@@ -32,6 +33,7 @@ function TabPanel(props) {
         </Box>
       )}
     </div>
+    
   );
 }
 
@@ -65,8 +67,9 @@ function Menu(props) {
   const history = useHistory();
 
   return (
+    
       <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar position="fixed">
           <Tabs
             value={value}
             onChange={handleChange}
@@ -114,6 +117,7 @@ function Menu(props) {
         {props.children}
 
       </div>
+     
   );
 }
 

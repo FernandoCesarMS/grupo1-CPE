@@ -1,5 +1,7 @@
 .baseMENU{
-
+    position: fixed;
+    top: 0;
     font-weight: bold;
 
 }
+
