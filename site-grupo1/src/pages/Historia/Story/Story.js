@@ -4,16 +4,19 @@ function Story() {
     return (
         <div>
             <p>
-                Em Manatee a paz reinava entre as terras e as raças viviam pacificamente graças ao tratado realizado pelo rei Morh, que estabelecia o domínio de cada raça em seu território e garantia o modo de vida de cada uma. Por 300 anos o tratado funcionou perfeitamente, até que Howthghor rei dos Orcs, movido por sua ganância e cobiça invadiu a terra de Myneroth, lar dos anões no intuito de se apropriar das riquezas locais e estabelecer assentamento para sua raça que mutiplicava como praga na seara.
+                Você foi chamado para trilhar seu caminho no mundo ninja, a Aldeia da Folha precisa de você, mostre que você também tem a vontade do fogo!
             </p>
             <p>
-                Desde então os anões declararam guerra aos Orcs, mas por serem em menor número e tamanho, não teriam a chance de revindicar nada. Então, Midgarr, líder dos anões vai até o reino dos humanos em busca de auxílio e asilo, onde por sorte uma boa relaçaõ comercial de pedras preciosas e forja de armas era cultivada. A diplomacia entre humanos e anões garantiu a guerra declarada aos orcs, formando o maior exército já visto em Manatee.
+                A vila vive atualmente um momento de estabilidade e paz, porém, nem sempre é tão fácil assim. Inimigos podem surgir de qualquer lugar, ninjas se infiltrarem na vila para roubar segredos e jutsus, além do principal problema, shinobis e kunoichis que desertam e declara a própria vila como inimiga, os chamados Nukenins. Esteja preparado!
             </p>
             <p>
-                A guerra por territórios levou os orcs a recuarem quando perdiam algumas das constantes batalhas, os levando a invadir as florestas negras dos Elfos. Trandhuill rei dos elfos apesar de pacífico levava ao extremo o trato do rei Morh, o que lhe reservava o direito de atacar qualquer um que entrasse no território dos elfos. E assim os elfos também entram em guerra declarada com os Orcs. Mas se pensa que elfos, humanos e anões se tornam aliados, está enganado. Sua arrogância e senso de superioridade aliada à um elevado egocentrismo só protegia o território das florestas dos elfos, não se envolvendo em terras adjacentes.
+                Treine, participe de missões, adquira experiência, seu clã logo precisará de uma nova liderança, e você pode ser essa pessoa que liderará seu clã nas batalhas. E porque não sonhar? O posto de Hokage, o mais alto nível que um ninja pode alcançar, você pode chegar lá.
             </p>
             <p>
-                E assim Manatee se torna terra de ninguém, com raças invandindo terras alheias durante o passar das décadas, fazendo com que os feudos e cidades se mesclassem em raças, com a maldade e vilania reinando junto a centenas de mercenários. Não existe mais causa, não existe mais propósito e muito menos a paz. Embarque em Manatee e descubra sua jornada!
+                Mas um passo de cada vez, forme na academia primeiro e torne-se um Genin. Faça muitas missões e aprenda jutsus para se tornar forte, e assim fazer o exame Chunin e mostrar para seus companheiros de clã que eles podem contar com você. Seu esforço nas missões será notado, e você poderá se tornar um Jounin e estará a um passo de se tornar o líder de seu clã.
+            </p>
+            <p>
+                Mas não será tão fácil, e ao se tornar Jounin você terá que fazer uma escolha que mudará o destino da Aldeia... para o bem, ou para o mal... 
             </p>
         </div>
     );

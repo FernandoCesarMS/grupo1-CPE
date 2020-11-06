@@ -10,7 +10,7 @@ function Historia() {
       <div className="corpoHIST">
         <center>
           <h1>História</h1>
-          <img src="/images/historiarpg-png.png" />
+          <img src="/images/konoha_historia.gif" />
         </center>
         <br /> <br /> <br />
         <Story />
