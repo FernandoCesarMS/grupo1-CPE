@@ -1,6 +1,98 @@
 .baseHOME{
-
-    background-image: linear-gradient(rgb(109, 202, 202), white);
-
+    height: 2100px;
 }
 
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+
+    background-image: url(../Home/foto/background-homeAnime.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.informacoes{
+    position: absolute;
+    left: 50px;
+    top: 0px;
+
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: black;
+}
+
+.diferenciais{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-image: url(../Home/foto/background-diffhome.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.features{
+    position: absolute;
+    left: 50px;
+    top: 650px;
+
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+}
+
+.noticias{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    
+    background-image: url(../Home/foto/background-noticias.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.news{
+    position: absolute;
+    left: 25px;
+    top: 1250px;
+
+    height: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.server{
+    position: absolute;
+    right: 0px;
+    top: 1290px;
+
+    height: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.rodape{
+    height: 100px;
+    background-color: darkgrey;
+}
