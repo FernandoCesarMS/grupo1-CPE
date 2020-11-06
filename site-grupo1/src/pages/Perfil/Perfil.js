@@ -24,11 +24,7 @@ function Perfil() {
   const classes = useStyles();
 
   return (
-  <div className="basePERFIL"> {/* Div que armaneza a página inteira */}
-
-      <div className="title"> {/* Div que contêm o titulo */}
-        <h1>Perfil</h1>
-      </div>
+  <div className="basePERFIL"> {/* Div que armazena a página inteira */}
 
       <div className="body"> {/* Div que contêm as informações do perfil */}
         <div className={classes.imagemPrincipal}> {/* Div que contêm a imagem do personagem */}
