@@ -12,6 +12,13 @@
 }
 
 .body {
-  position: absolute;
+  position: absolute; 
+  background-color: rgba(256, 256, 256, 0.7); /* Background do fundo do "card" */
+  font-weight: bold;                            /* Deixa a fonte em negrito */
+  border: 2px solid rgba(128, 128, 128, 0.2); /* Define a grossura da borda e a cor, o ultimo valor é o de opacidade */
+  border-radius: 12px;                          /* Arredonda a borda */
+}
 
+.text{
+  margin-left: 10px;
 }
