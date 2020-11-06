@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import "./Perfil.css";
+import UserInfo from "./UserInfo"
 /*
 A página Perfil tem como função possibilitar ao usuário a visualização dos
 seus principais dados.
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Perfil() {
+function Perfil(props) {
   const classes = useStyles();
 
   return (
@@ -36,10 +37,7 @@ function Perfil() {
           <Avatar src="/broken-image.jpg" />
         </div>
         <div className="text">
-          <p>Nome: </p>
-          <p>Gênero: </p>
-          <p>Clã: </p>
-          <p>Técnica: </p>
+          <UserInfo/>
         </div>
       </div>
     </div>
