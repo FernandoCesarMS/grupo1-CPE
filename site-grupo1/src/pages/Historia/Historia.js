@@ -10,7 +10,7 @@ Página com a página central do jogo
 function Historia() {
   return (
     <div className="baseHIST">
-      <div className="corpoHIST">
+      <div className="historia">
         <div className="quote">
           <h5>
             "Você pode morrer como um herói ou viver tempo suficiente para se tornar o vilão."
@@ -20,7 +20,7 @@ function Historia() {
       </div>
 
       <div className="sideimages">
-        <Card border="primary" style={{ width: '25rem' }}>
+        <Card border="primary" style={{ width: '22rem' }}>
           <Card.Img variant="top" src="/images/Historia/mapahistoria.png" />
           <Card.Body>
             <Card.Text>
@@ -30,7 +30,7 @@ function Historia() {
           </Card.Body>
         </Card>
         <br/> 
-        <Card border="primary" style={{ width: '25rem' }}>
+        <Card border="primary" style={{ width: '22rem' }}>
           <Card.Img variant="top" src="/images/Historia/fotoaldeiadafolha.jpg"  />
           <Card.Body>
             <Card.Text>
