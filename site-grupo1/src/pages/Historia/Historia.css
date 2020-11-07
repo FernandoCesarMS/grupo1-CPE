@@ -1,11 +1,34 @@
 .baseHIST{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
 
-    background-image: linear-gradient(rgb(109, 202, 202), white);
-
+    background-image: linear-gradient(rgb(109, 202, 202), white)
 }
 
 .corpoHIST{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 800px;
 
-    font-style: oblique;
+    font-size: larger;
+    font-family: Bradley Hand, cursive;
+}
 
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color:orangered;
+}
+
+.sideimages{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 100px;
+    right: 50px;
 }
