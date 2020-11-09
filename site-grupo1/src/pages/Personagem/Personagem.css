@@ -1,20 +1,105 @@
 .basePERS {
+<<<<<<< Updated upstream
     height: 100%;
+    background-color: rgb(212, 212, 212);
+=======
+    height: 200vh;
+
+    display: flex;
+    flex-direction: column;
+
     background-color: rgb(212, 212, 212);
 }
 
-.escolha-person1 {
+.baseAtr{
+    height: 100vh;
+    width: 100vw;
+    
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    max-width: 1800px;
+
+    background-color: rgb(212, 212, 212);
 }
 
-.escolha-person {
+.atribute{    
+    width: 90%;
+    
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    max-width: 900px;
+
+    position: relative;
+    top: 10%;
+    left: 4%;
+}
+
+.atributeselect{
+    width: 100%;
+
+    position: relative;
+    top: 2%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-column.nav.nav-pills{
+    position: relative;
+    
+    width: 10%;
+}
+
+.insidetab, .tab-content{
+    height: 90%;
+    width: 100%;
+    
+    position: relative;
+    left: 2%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img{
+    border: 2px solid red;
+
+    position: relative;
+    top: 5%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    width: 70%;
+
+    position: relative;
+    left: 4%;
+
+    display: flex;
+    flex-direction: column;
+
+    font-size: medium;
+    font-family: Bradley Hand, cursive;
+>>>>>>> Stashed changes
+}
+
+.botoes{
+    height: 7.5%;
+    width: 14%;
+
+    position: relative;
+    left: 65%;
+    top: 20%;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .gender {

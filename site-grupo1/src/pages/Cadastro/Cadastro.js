@@ -60,7 +60,7 @@ function Cadastro() {
                 alert("Senhas diferentes!");
               else {
                 alert("Cadastrado!");
-                history.push("Personagem");
+                history.push("/PersonagemCla");
               }
             }}>
             Cadastrar
