@@ -1,12 +1,16 @@
 .baseHOME{
-    height: 2100px;
+    height: 325vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .apresentacao{
+    height: 35%;
+    
     display: flex;
     flex-direction: column;
-    height: 700px;
-
+    
     background-image: url(../Home/foto/background-homeAnime.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -14,12 +18,12 @@
 }
 
 .informacoes{
-    position: absolute;
-    left: 50px;
-    top: 0px;
+    height: 90%;
+    width: 40%;
 
-    height: 600px;
-    width: 600px;
+    position: relative;
+    left: 4%; 
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,9 +32,11 @@
 }
 
 .diferenciais{
+    height: 30%;
+    
     display: flex;
     flex-direction: column;
-    height: 600px;
+    
     background-image: url(../Home/foto/background-diffhome.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -38,12 +44,12 @@
 }
 
 .features{
-    position: absolute;
-    left: 50px;
-    top: 650px;
+    height: 90%;
+    width: 50%;
+    
+    position: relative;
+    left: 4%;
 
-    height: 600px;
-    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,47 +58,51 @@
 }
 
 .noticias{
+    height: 30%;
+    
     display: flex;
-    flex-direction: column;
-    height: 700px;
+    flex-direction: row;
     
     background-image: url(../Home/foto/background-noticias.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;  
 }
 
 .news{
-    position: absolute;
-    left: 25px;
-    top: 1250px;
+    height: 90%;
+    width: 40%;
+    
+    position: relative;
+    left: 4%;
 
-    height: 700px;
-    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 
     color: white;
 }
 
 .server{
-    position: absolute;
-    right: 0px;
-    top: 1290px;
-
-    height: 700px;
-    width: 500px;
+    height: 90%;
+    width: 40%;
+    
+    position: relative;
+    left: 10%;
+    top: 2.5%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    text-align: center;
     color: white;
 }
 
 .rodape{
-    height: 100px;
+    height: 5%;
+
     background-color: darkgrey;
 }

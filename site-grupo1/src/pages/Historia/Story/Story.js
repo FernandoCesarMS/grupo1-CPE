@@ -4,8 +4,6 @@ import "../Historia.css"
 function Story() {
     return (
         <div>
-
-            
             <p>
                 Você foi chamado para trilhar seu caminho no mundo ninja, a Aldeia da Folha precisa de você, mostre que você também tem a vontade do fogo!
             </p>

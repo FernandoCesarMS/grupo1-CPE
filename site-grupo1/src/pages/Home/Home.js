@@ -17,7 +17,7 @@ function Home() {
           <h1>Sua aventura começa aqui.</h1>
           <h3>Crie seu personagem, represente seu clã 
             e jogue com seus amigos. </h3>
-          <h3>Cadastre agora, 100% gratuito.</h3>
+          <h3>Cadastre-se agora, 100% gratuito.</h3>
           <div className="mb-2">
             <Button variant="primary" size="lg">
               Cadastrar
@@ -53,9 +53,9 @@ function Home() {
         <div className="server">
           <h1>Servidores Disponíveis</h1>
           <Server />
-          <br/>
-          <Button variant="primary">Selecionar</Button>
+          <Button variant="dark">Entrar no servidor</Button>
         </div>
+        
       </div>
 
       <div className="rodape">
