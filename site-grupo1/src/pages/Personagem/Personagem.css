@@ -1,8 +1,4 @@
 .basePERS {
-<<<<<<< Updated upstream
-    height: 100%;
-    background-color: rgb(212, 212, 212);
-=======
     height: 200vh;
 
     display: flex;
@@ -85,7 +81,6 @@
 
     font-size: medium;
     font-family: Bradley Hand, cursive;
->>>>>>> Stashed changes
 }
 
 .botoes{
@@ -102,7 +97,3 @@
     justify-content: space-between;
 }
 
-.gender {
-    max-width: 600px;
-    padding: 20px;
-}
