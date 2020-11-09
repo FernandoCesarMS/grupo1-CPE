@@ -8,8 +8,6 @@ import {
   Tab,
   Typography,
   Box,
-  useScrollTrigger,
-  Slide,
 } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 
@@ -18,21 +16,11 @@ Código do menu superior que aparece em todas as páginas
 A implementação, atualmente, utiliza o framework material
 */
 
-function EscondeBarra(props) {
-  const { children, window } = props;
-  const trigger = useScrollTrigger({ target: window ? window() : undefined });
-
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
   return (
-    <div
+    
+    <div 
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
@@ -45,6 +33,7 @@ function TabPanel(props) {
         </Box>
       )}
     </div>
+    
   );
 }
 
@@ -78,8 +67,8 @@ function Menu(props) {
   const history = useHistory();
 
   return (
-    <div className={classes.root}>
-      <EscondeBarra {...props}>
+    
+      <div className={classes.root}>
         <AppBar position="fixed">
           <Tabs
             value={value}
@@ -124,9 +113,11 @@ function Menu(props) {
             />
           </Tabs>
         </AppBar>
-      </EscondeBarra>
-      {props.children}
-    </div>
+        
+        {props.children}
+
+      </div>
+     
   );
 }
 

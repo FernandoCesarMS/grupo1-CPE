@@ -1,4 +1,4 @@
-import React from "react";
+import  React from "react";
 import { useState } from "react";
 import { Form, Button, Col } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
@@ -11,11 +11,6 @@ A implementação, atualmente, utiliza o componente Campo, com alguns componente
 do framework Bootstrap
 */
 function Cadastro() {
-  const [nome, setNome] = useState("");
-  const [idade, setIdade] = useState("");
-  const [CPF, setCPF] = useState("");
-  const [usuario, setUsuario] = useState("");
-  const [email, setEmail] = useState("");
   const [senha1, setSenha1] = useState(0);
   const [senha2, setSenha2] = useState(1);
   const history = useHistory();
@@ -25,53 +20,16 @@ function Cadastro() {
       <div className="corpoCAD">
         <h1>Cadastro</h1>
         <Form>
-          <Form.Group controlId="NomeCompleto">
-            <Form.Label>Nome Completo</Form.Label>
-            <Form.Control
-              placeholder="Nome Completo"
-              onChange={(event) => {
-                setNome(event.target.value);
-              }}
-            />
-          </Form.Group>
+          <Campo col={0} id="Nome" label="Nome Completo"/>
+
           <Form.Row>
-            <Form.Group as={Col} controlId="Idade">
-              <Form.Label>Idade</Form.Label>
-              <Form.Control
-                placeholder="Idade"
-                onChange={(event) => {
-                  setIdade(event.target.value);
-                }}
-              />
-            </Form.Group>
-            <Form.Group as={Col} controlId="CPF">
-              <Form.Label>CPF</Form.Label>
-              <Form.Control
-                placeholder="CPF"
-                onChange={(event) => {
-                  setCPF(event.target.value);
-                }}
-              />
-            </Form.Group>
+            <Campo col={1} id="Idade" label="Idade"/>
+            <Campo col={1} id="CPF" label="CPF"/>
           </Form.Row>
-          <Form.Group controlId="nomeUsuario">
-            <Form.Label>Nome de Usuário</Form.Label>
-            <Form.Control
-              placeholder="Nome de Usuário"
-              onChange={(event) => {
-                setUsuario(event.target.value);
-              }}
-            />
-          </Form.Group>
-          <Form.Group controlId="email">
-            <Form.Label>Endereço de email</Form.Label>
-            <Form.Control
-              placeholder="Endereço de email"
-              onChange={(event) => {
-                setEmail(event.target.value);
-              }}
-            />
-          </Form.Group>
+
+          <Campo col={0} id="Nome de usuário" label="Nome de usuário"/>
+          <Campo col={0} id="Endereço de email" label="Endereço de email"/>
+
           <Form.Row>
             <Form.Group as={Col} controlId="Senha">
               <Form.Label>Crie sua senha</Form.Label>
@@ -80,8 +38,7 @@ function Cadastro() {
                 placeholder="Digite sua senha"
                 onChange={(event) => {
                   setSenha1(event.target.value);
-                }}
-              />
+                }} />
             </Form.Group>
 
             <Form.Group as={Col} controlId="SenhaConf">
@@ -91,8 +48,7 @@ function Cadastro() {
                 placeholder="Digite sua senha"
                 onChange={(event) => {
                   setSenha2(event.target.value);
-                }}
-              />
+                }} />
             </Form.Group>
           </Form.Row>
 
@@ -100,13 +56,13 @@ function Cadastro() {
             variant="primary"
             type="Cadastrar"
             onClick={() => {
-              if (senha1 !== senha2) alert("Senhas diferentes!");
+              if (senha1 !== senha2)
+                alert("Senhas diferentes!");
               else {
                 alert("Cadastrado!");
                 history.push("Personagem");
               }
-            }}
-          >
+            }}>
             Cadastrar
           </Button>
         </Form>
