@@ -7,6 +7,10 @@ import Login from "./pages/Login";
 import Perfil from "./pages/Perfil";
 import Menu from "./pages/Menu";
 import Personagem from "./pages/Personagem";
+import PersonagemCla from "./pages/Personagem/PersonagemCla";
+import PersonagemGenero from "./pages/Personagem/PersonagemGenero";
+import PersonagemClasse from "./pages/Personagem/PersonagemClasse";
+
 /*
 Página que implementa as rotas entre as páginas e adiciona o menu superior
 em todas as páginas
@@ -19,6 +23,9 @@ function Routes() {
       <Switch>
         <Route exact path="/Login" component={inserirMenu} />
         <Route exact path="/Personagem" component={inserirMenu} />
+        <Route exact path="/PersonagemCla" component={inserirMenu} />
+        <Route exact path="/PersonagemGenero" component={inserirMenu} />
+        <Route exact path="/PersonagemClasse" component={inserirMenu} />
         <Route exact path="/Cadastro" component={inserirMenu} />
         <Route exact path="/Historia" component={inserirMenu} />
         <Route exact path="/Perfil" component={inserirMenu} />
@@ -39,7 +46,9 @@ function inserirMenu() {
         <Route exact path="/Cadastro" component={Cadastro} />
         <Route exact path="/Historia" component={Historia} />
         <Route exact path="/Perfil" component={Perfil} />
-        <Route exact path="/Personagem" component={Personagem} />
+        <Route exact path="/PersonagemCla" component={PersonagemCla} />
+        <Route exact path="/PersonagemGenero" component={PersonagemGenero} />
+        <Route exact path="/PersonagemClasse" component={PersonagemClasse} />
         {/* A linha abaixo redireciona qualquer outro codigo para a página home */}
         <Route component={() => <Redirect to="/Home" />} />
       </Switch>

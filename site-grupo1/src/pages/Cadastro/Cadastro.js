@@ -103,7 +103,7 @@ function Cadastro() {
               if (senha1 !== senha2) alert("Senhas diferentes!");
               else {
                 alert("Cadastrado!");
-                history.push("Personagem");
+                history.push("/PersonagemCla");
               }
             }}
           >
