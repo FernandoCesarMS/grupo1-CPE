@@ -42,6 +42,12 @@ function Perfil(props) {
           />
         </div>
       </div>
+
+      <div class="ImageLeft">
+
+        <img src="/images/Perfil/narutoramen.png"></img>
+
+      </div>
     </div>
   );
 }

@@ -13,24 +13,23 @@ function Historia() {
       <div className="historia">
         <div className="quote">
           <h5>
-            "Você pode morrer como um herói ou viver tempo suficiente para se tornar o vilão."
+            "Você pode morrer como um herói ou viver tempo suficiente para se tornar o vilão"
           </h5>
         </div>
         <Story />
       </div>
 
       <div className="sideimages">
-        <Card border="primary" style={{ width: '22rem' }}>
+        <Card border="orange" style={{ width: '22rem' }}>
           <Card.Img variant="top" src="/images/Historia/mapahistoria.png" />
           <Card.Body>
             <Card.Text>
               Mapa do mundo.
             </Card.Text>
-            
           </Card.Body>
         </Card>
         <br/> 
-        <Card border="primary" style={{ width: '22rem' }}>
+        <Card border="white" style={{ width: '22rem' }}>
           <Card.Img variant="top" src="/images/Historia/fotoaldeiadafolha.jpg"  />
           <Card.Body>
             <Card.Text>

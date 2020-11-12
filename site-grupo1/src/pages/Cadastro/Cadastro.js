@@ -23,7 +23,6 @@ function Cadastro() {
   return (
     <div className="baseCAD">
       <div className="corpoCAD">
-        <h1>Cadastro</h1>
         <Form>
           <Form.Group controlId="NomeCompleto">
             <Form.Label>Nome Completo</Form.Label>

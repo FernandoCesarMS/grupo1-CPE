@@ -13,7 +13,7 @@ function PersonagemGenero() {
     return (
         <div className="baseAtr">
             <div className="atribute">
-                <h3>Escolha seu gênero:</h3>
+                <h3 className = "atributeH">Escolha seu gênero:</h3>
                 <div className="atributeselect">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
@@ -72,7 +72,7 @@ function PersonagemGenero() {
                         history.push("/PersonagemClasse");
                     }}
                 >
-                    Próxima
+                    Selecionar
               </Button>
             </div>
         </div>

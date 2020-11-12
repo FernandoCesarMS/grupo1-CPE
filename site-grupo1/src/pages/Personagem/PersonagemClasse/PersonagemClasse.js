@@ -13,7 +13,7 @@ function PersonagemClasse() {
     return (
         <div className="baseAtr">
             <div className="atribute">
-                <h3>Escolha sua classe:</h3>
+                <h3 className= "atributeH">Escolha sua classe:</h3>
                 <div className="atributeselect">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
