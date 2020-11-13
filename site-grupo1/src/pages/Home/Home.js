@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import News from "./News";
 import Server from "./Server";
 import { Button } from "react-bootstrap";
@@ -10,6 +11,7 @@ que chamem atenção visualmente, notícias do jogo e mais detalhes a
 serem acrescentados
 */
 function Home() {
+  const history = useHistory();
   return (
     <div className="baseHOME" >
       <div className="apresentacao">
@@ -19,10 +21,22 @@ function Home() {
             e jogue com seus amigos. </h3>
           <h3>Cadastre-se agora, 100% gratuito.</h3>
           <div className="mb-2">
-            <Button variant="primary" size="lg">
+            <Button 
+            variant="primary" 
+            size="lg"
+            onClick={()=>{
+              history.push("/Cadastro");
+            }}
+            >
               Cadastrar
-          </Button>{' '}
-            <Button variant="success" size="lg">
+          </Button>
+            <Button 
+            variant="success" 
+            size="lg"
+            onClick={()=>{
+              history.push("/Login");
+            }}
+            >
               Login
           </Button>
           </div>
@@ -53,7 +67,7 @@ function Home() {
         <div className="server">
           <h1>Servidores Disponíveis</h1>
           <Server />
-          <Button variant="dark">Entrar no servidor</Button>
+          <Button >Entrar no servidor</Button>
         </div>
         
       </div>

@@ -3,17 +3,10 @@ import Tab from 'react-bootstrap/Tab';
 import { Table } from "react-bootstrap";
 import "../Personagem.css";
 
-function Atributo(props){
+function Atributo(props) {
     return (
         <Tab.Pane eventKey={props.posicao}>
             <div className="insidetab">
-                <img
-                    src={props.img}
-                    alt={props.nome}
-                    className="img"
-                    width="240"
-                    height="300"
-                />
                 <div className="info">
                     <div className="text">
                         <p>{props.text}</p>
@@ -52,7 +45,13 @@ function Atributo(props){
                         </Table>
                     </div>
                 </div>
-
+                <div className="sideimage">
+                    <img
+                        src={props.img}
+                        alt={props.nome}
+                        className="img"
+                    />
+                </div>
             </div>
         </Tab.Pane>
 

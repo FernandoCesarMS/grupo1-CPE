@@ -1,6 +1,6 @@
 import React from "react";
 import Story from "./Story";
-import { Card } from "react-bootstrap";
+import Figure from 'react-bootstrap/Figure'
 import "./Historia.css";
 
 
@@ -13,30 +13,31 @@ function Historia() {
       <div className="historia">
         <div className="quote">
           <h5>
-            "Você pode morrer como um herói ou viver tempo suficiente para se tornar o vilão"
+            "Você pode morrer como um herói ou viver tempo suficiente para se tornar o vilão."
           </h5>
         </div>
         <Story />
       </div>
 
       <div className="sideimages">
-        <Card border="orange" style={{ width: '22rem' }}>
-          <Card.Img variant="top" src="/images/Historia/mapahistoria.png" />
-          <Card.Body>
-            <Card.Text>
-              Mapa do mundo.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-        <br/> 
-        <Card border="white" style={{ width: '22rem' }}>
-          <Card.Img variant="top" src="/images/Historia/fotoaldeiadafolha.jpg"  />
-          <Card.Body>
-            <Card.Text>
-              Aldeia da Folha.
-            </Card.Text>
-          </Card.Body>
-        </Card>
+        <Figure>
+          <Figure.Image
+            alt="Mapa do mundo"
+            src="/images/Historia/mapahistoria.png"
+          />
+          <Figure.Caption>
+            Mapa do mundo.
+          </Figure.Caption>
+        </Figure>
+        <Figure>
+          <Figure.Image
+            alt="Aldeia da Folha"
+            src="/images/Historia/fotoaldeiadafolha.jpg"
+          />
+          <Figure.Caption>
+            Aldeia da Folha.
+          </Figure.Caption>
+        </Figure>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ function PersonagemClasse() {
     return (
         <div className="baseAtr">
             <div className="atribute">
-                <h3 className= "atributeH">Escolha sua classe:</h3>
+                <h3>Escolha sua classe:</h3>
                 <div className="atributeselect">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
@@ -65,26 +65,26 @@ function PersonagemClasse() {
                         </Tab.Content>
                     </Tab.Container>
                 </div>
-            </div>
-            <div className="botoes">
-                <Button
-                    variant="danger"
-                    type="prox"
-                    onClick={() => {
-                        history.push("/PersonagemGenero");
-                    }}
-                >
-                    Voltar
-                </Button>
-                <Button
-                    variant="success"
-                    type="prox"
-                    onClick={() => {
-                        history.push("/Perfil");
-                    }}
-                >
-                    Concluir
-              </Button>
+                <div className="botoes">
+                    <Button
+                        variant="danger"
+                        type="prox"
+                        onClick={() => {
+                            history.push("/PersonagemCla");
+                        }}
+                    >
+                        Voltar
+                    </Button>
+                    <Button
+                        variant="success"
+                        type="prox"
+                        onClick={() => {
+                            history.push("/Perfil");
+                        }}
+                    >
+                        Concluir
+                    </Button>
+                </div>
             </div>
         </div>
     );

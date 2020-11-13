@@ -13,7 +13,7 @@ function PersonagemCla() {
     return (
         <div className="baseAtr">
             <div className="atribute">
-                <h3 class = "atributeH">Escolha seu clã:</h3>
+                <h3>Escolha seu clã:</h3>
                 <div className="atributeselect">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
@@ -77,7 +77,7 @@ function PersonagemCla() {
                                 de serem portadores do kekkei genkai Sharingan, que lhes permite ganhar diversas vantagens,  
                                 como copiar jutsus do oponente, percepção avançada em camo de batalha, e outras várias  
                                 técnicas que podem ser aprimoradas."
-                                forca="+4"              
+                                forca="+4"
                                 agilidade="+9"
                                 resiliencia="+3"
                                 magia="+3"
@@ -115,28 +115,29 @@ function PersonagemCla() {
                         </Tab.Content>
                     </Tab.Container>
                 </div>
-            </div>
-            <div className="botoes">
-                <Button
-                    variant="danger"
-                    type="prox"
-                    onClick={() => {
-                        history.push("/Cadastro");
-                    }}
+                <div className="botoes">
+                    <Button
+                        variant="danger"
+                        type="prox"
+                        onClick={() => {
+                            history.push("/PersonagemGenero");
+                        }}
+                        >
+                        Voltar
+                    </Button>
+                    <Button
+                        variant="success"
+                        type="prox"
+                        onClick={() => {
+                            history.push("/PersonagemClasse");
+                        }}
                     >
-                    Voltar
-                </Button>
-                <Button
-                    variant="success"
-                    type="prox"
-                    onClick={() => {
-                        history.push("/PersonagemGenero");
-                    }}
-                    >
-                    Selecionar
-              </Button>
+                        Próxima
+                    </Button>
+                </div>
             </div>
         </div>
+
     );
 }
 

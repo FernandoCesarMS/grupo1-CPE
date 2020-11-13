@@ -74,7 +74,7 @@ function Personagem() {
         <div className="atributeselect">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
-            <Nav variant="pills" className="flex-column">
+            <Nav variant="pills">
               <Lista posicao="first" nome="Akimichi" />
               <Lista posicao="second" nome="Hyuga" />
               <Lista posicao="third" nome ="Inuzuka" />

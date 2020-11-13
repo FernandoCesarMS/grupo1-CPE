@@ -96,13 +96,13 @@ function Cadastro() {
           </Form.Row>
 
           <Button
-            variant="primary"
+            variant="success"
             type="Cadastrar"
             onClick={() => {
               if (senha1 !== senha2) alert("Senhas diferentes!");
               else {
                 alert("Cadastrado!");
-                history.push("/PersonagemCla");
+                history.push("/PersonagemGenero");
               }
             }}
           >

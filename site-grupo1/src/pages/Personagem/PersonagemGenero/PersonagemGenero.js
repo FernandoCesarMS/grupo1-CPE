@@ -13,7 +13,7 @@ function PersonagemGenero() {
     return (
         <div className="baseAtr">
             <div className="atribute">
-                <h3 className = "atributeH">Escolha seu gênero:</h3>
+                <h3>Escolha seu gênero:</h3>
                 <div className="atributeselect">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
@@ -54,27 +54,28 @@ function PersonagemGenero() {
                         </Tab.Content>
                     </Tab.Container>
                 </div>
+                <div className="botoes">
+                    <Button
+                        variant="danger"
+                        type="prox"
+                        onClick={() => {
+                            history.push("/Cadastro");
+                        }}
+                    >
+                        Voltar
+                    </Button>
+                    <Button
+                        variant="success"
+                        type="prox"
+                        onClick={() => {
+                            history.push("/PersonagemCla");
+                        }}
+                    >
+                        Próxima
+                    </Button>
+                </div>
             </div>
-            <div className="botoes">
-                <Button
-                    variant="danger"
-                    type="prox"
-                    onClick={() => {
-                        history.push("/PersonagemCla");
-                    }}
-                >
-                    Voltar
-                </Button>
-                <Button
-                    variant="success"
-                    type="prox"
-                    onClick={() => {
-                        history.push("/PersonagemClasse");
-                    }}
-                >
-                    Selecionar
-              </Button>
-            </div>
+
         </div>
     );
 }
