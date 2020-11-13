@@ -45,7 +45,7 @@ function Perfil(props) {
 
       <div class="ImageLeft">
 
-        <img src="/images/Perfil/narutoramen.png"></img>
+        <img src="/images/Perfil/narutoperfil.png"></img>
 
       </div>
     </div>
