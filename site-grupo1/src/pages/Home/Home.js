@@ -45,35 +45,28 @@ function Home() {
 
       <div className="diferenciais">
         <div className="features">
-          <h1>Entre nessa aventura!</h1>
-          <h3>
+          <h1 className="title">Entre nessa aventura!</h1>
+          <h3 className="texto">
             - 100% gratuito
           </h3>
-          <h3>
+          <h3 className="texto">
             - Jogue com dezenas de outros jogadores
           </h3>
-          <h3>
-            - explicando o jogo, etc.
+          <h3 className="texto">
+            - Escolha o clã e a classe que mais se aproximam de seu estilo
+          </h3>
+          <h3 className="texto">
+            - Evolua seu personagem através de diversos níveis
+          </h3>
+          <h3 className="texto">
+            - Diversos modos de combate e gameplay disponíveis 
           </h3>
         </div>
       </div>
 
       <div className="noticias">
-        <div className="news">
           <h1>Notícias e Eventos</h1>
           <News />
-        </div>
-
-        <div className="server">
-          <h1>Servidores Disponíveis</h1>
-          <Server />
-          <Button >Entrar no servidor</Button>
-        </div>
-        
-      </div>
-
-      <div className="rodape">
-
       </div>
     </div>
   );

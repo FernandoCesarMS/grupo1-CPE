@@ -12,9 +12,9 @@ function News() {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>Atualização 2.0</h3>
-                    <p>Semana que vem chega uptade 2.0 como novos estilos de personagens. Confira!</p>
-                    <p>04.11.2020</p>
+                    <h3 className="text">Atualização 2.0</h3>
+                    <p className="text">Semana que vem chega uptade 2.0 como novos estilos de personagens. Confira!</p>
+                    <p className="text">04.11.2020</p>
                 </Carousel.Caption>
             </Carousel.Item>
             
@@ -26,9 +26,9 @@ function News() {
                 />
 
                 <Carousel.Caption>
-                    <h3>Novo servidor</h3>
-                    <p>Novo servidor Uchiha x Uzumaki 110 já está disponível.</p>
-                    <p>06.11.2020</p>
+                    <h3 className="text">Novo servidor</h3>
+                    <p className="text">Novo servidor Uchiha x Uzumaki 110 já está disponível.</p>
+                    <p className="text">06.11.2020</p>
                 </Carousel.Caption>
             </Carousel.Item>
             
@@ -41,7 +41,7 @@ function News() {
 
                 <Carousel.Caption>
                     <h3 className = "bold">Nova competição Interclãs anunciada!</h3>
-                    <p className = "bold">Junte seu clã e venha competir com dezenas de outros jogadores. Dia 28.11, não perca!</p>
+                    <p className = "bold">Dia 28.11, não perca!</p>
                     <p className = "bold">01.11.2020</p>
                 </Carousel.Caption>
             </Carousel.Item>
