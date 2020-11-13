@@ -27,29 +27,27 @@ function PersonagemGenero() {
                                 posicao="first"
                                 nome="kunoichi"
                                 img="images/Personagem/Genero/kunoichi4.png"
-                                text="Conseguem converter chakra em caloria, por serem mais adaptados a um corpo obeso,  
-                                no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
-                                A força física e velocidade também são drasticamente aumentadas com a expansão,  
-                                permitindo socos esmagadores com a expansão do punho. "
-                                forca="+2"
+                                text="Seja uma kunoichi e prove seu valor para se tornar a maior ninja da Aldeia da Folha.
+                                Não será uma jornada fácil, mas você poderá contar com os membros de seu clã para isso.
+                                'Não importa o quão poderoso você se torne nunca tente fazer tudo sozinho, caso contrario irá falhar.' - Uchiha, Itachi."
+                                forca="+6"
                                 agilidade="+6"
-                                resiliencia="+1"
-                                magia="+4"
-                                furtividade="+2"
+                                inteligencia="+6"
+                                chakra="+6"
+                                estamina="+6"
                             />
                             <Atributo
                                 posicao="second"
                                 nome="shinobi"
                                 img="images/Personagem/Genero/shinobi4.png"
-                                text="Conseguem converter chakra em caloria, por serem mais adaptados a um corpo obeso,  
-                                no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
-                                A força física e velocidade também são drasticamente aumentadas com a expansão,  
-                                permitindo socos esmagadores com a expansão do punho. "
-                                forca="+5"
-                                agilidade="+2"
-                                resiliencia="+7"
-                                magia="+1"
-                                furtividade="+1"
+                                text="Seja um shinobi e prove seu valor para se tornar o maior ninja da Aldeia da Folha.
+                                Não será uma jornada fácil, mas você poderá contar com os membros de seu clã para isso.
+                                'Não importa o quão poderoso você se torne nunca tente fazer tudo sozinho, caso contrario irá falhar.' - Uchiha, Itachi."
+                                forca="+6"
+                                agilidade="+6"
+                                inteligencia="+6"
+                                chakra="+6"
+                                estamina="+6"
                             />
                         </Tab.Content>
                     </Tab.Container>

@@ -13,7 +13,7 @@ function PersonagemClasse() {
     return (
         <div className="baseAtr">
             <div className="atribute">
-                <h3>Escolha sua classe:</h3>
+                <h3>Escolha sua técnica:</h3>
                 <div className="atributeselect">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
@@ -30,11 +30,11 @@ function PersonagemClasse() {
                                 img="images/Personagem/Tecnica/ninjutsu.png"
                                 text="O Ninjutsu molda o chakra de acordo com o que o usuário deseja, podendo combinar
                                 com elementos da natureza, usar para cura ou outra das diversas possibilidades."
-                                forca="+3"
-                                agilidade="+7"
-                                resiliencia="+3"
-                                magia="+15"
-                                furtividade="+5"
+                                forca="+5"
+                                agilidade="+5"
+                                inteligencia="+4"
+                                chakra="+8"
+                                estamina="+8"
                             />
                             <Atributo
                                 posicao="second"
@@ -43,11 +43,11 @@ function PersonagemClasse() {
                                 text="O Taijutsu é uma forma básica de técnicas e refere-se a qualquer técnica que 
                                 envolva artes marciais ou a otimização das habilidades humanas naturais. Não requer 
                                 uso de chakra."
-                                forca="+10"
-                                agilidade="+6"
-                                resiliencia="+8"
-                                magia="+0"
-                                furtividade="+3"
+                                forca="+8"
+                                agilidade="+7"
+                                inteligencia="+5"
+                                chakra="+0"
+                                estamina="+10"
                             />
                             <Atributo
                                 posicao="third"
@@ -56,11 +56,11 @@ function PersonagemClasse() {
                                 text="O Genjutsu controla o fluxo de chakra no cérebro do oponente causando uma 
                                 pertubação dos sentidos, induzindo a pessoa a sentir dor ou algum trauma e afetar 
                                 seu psicológico."
-                                forca="+3"
-                                agilidade="+7"
-                                resiliencia="+4"
-                                magia="+10"
-                                furtividade="+6"
+                                forca="+7"
+                                agilidade="+3"
+                                inteligencia="+9"
+                                chakra="+6"
+                                estamina="+6"
                             />
                         </Tab.Content>
                     </Tab.Container>

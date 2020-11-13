@@ -39,29 +39,21 @@ function Personagem() {
                 posicao="first"
                 nome="kunoichi"
                 img="images/Personagem/Genero/kunoichi4.png"
-                text="Conseguem converter chakra em caloria, por serem mais adaptados a um corpo obeso,  
-                  no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
-                  A força física e velocidade também são drasticamente aumentadas com a expansão,  
-                  permitindo socos esmagadores com a expansão do punho. "
-                forca="+2"
+                forca="+6"
                 agilidade="+6"
-                resiliencia="+1"
-                magia="+4"
-                furtividade="+2"            
+                inteligencia="+6"
+                chakra="+6"
+                estamina="+6"            
               />
               <Atributo
                 posicao="second"
                 nome="shinobi"
                 img="images/Personagem/Genero/shinobi4.png"
-                text="Conseguem converter chakra em caloria, por serem mais adaptados a um corpo obeso,  
-                  no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
-                  A força física e velocidade também são drasticamente aumentadas com a expansão,  
-                  permitindo socos esmagadores com a expansão do punho. "
-                forca="+5"
-                agilidade="+2"
-                resiliencia="+7"
-                magia="+1"
-                furtividade="+1"
+                forca="+6"
+                agilidade="+6"
+                inteligencia="+6"
+                chakra="+6"
+                estamina="+6"
               />
             </Tab.Content>
           </Tab.Container>
@@ -92,11 +84,11 @@ function Personagem() {
                   no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
                   A força física e velocidade também são drasticamente aumentadas com a expansão,  
                   permitindo socos esmagadores com a expansão do punho."
-                forca="+12"
+                forca="+6"
                 agilidade="+5"
-                resiliencia="+10"
-                magia="+0"
-                furtividade="+0"            
+                inteligencia="+5"
+                chakra="+8"
+                estamina="+6"            
               />
               <Atributo
                 posicao="second"
@@ -106,11 +98,11 @@ function Personagem() {
                 campos extensos de visão e a capacidade de ver através de objetos sólidos e até mesmo  
                 o sistema circulatório chakra, sendo uma importante ténica de ataque, onde é focado nos  
                 pontos de chakra mais importantes."
-                forca="+3"
-                agilidade="+6"
-                resiliencia="+4"
-                magia="+8"
-                furtividade="+7"
+                forca="+6"
+                agilidade="+8"
+                inteligencia="+7"
+                chakra="+6"
+                estamina="+3"
               />
               <Atributo
                 posicao="third"
@@ -121,10 +113,10 @@ function Personagem() {
                 seu clã. Possuem habilidade de rastreamento através do faro, muito útil na perseguição 
                 de um inimigo."
                 forca="+6"
-                agilidade="+3"
-                resiliencia="+4"
-                magia="+1"
-                furtividade="+10"
+                agilidade="+9"
+                inteligencia="+4"
+                chakra="+4"
+                estamina="+7"
               />
               <Atributo
                 posicao="fourth"
@@ -134,11 +126,11 @@ function Personagem() {
                 de serem portadores do kekkei genkai Sharingan, que lhes permite ganhar diversas vantagens,  
                 como copiar jutsus do oponente, percepção avançada em camo de batalha, e outras várias  
                 técnicas que podem ser aprimoradas."
-                forca="+4"
-                agilidade="+9"
-                resiliencia="+3"
-                magia="+3"
-                furtividade="+6"
+                forca="+6"
+                agilidade="+5"
+                inteligencia="+9"
+                chakra="+5"
+                estamina="+5"
               />
               <Atributo
                 posicao="fifth"
@@ -148,11 +140,11 @@ function Personagem() {
                 de objetos, chakra e seres vivos. Os membros deste clã possuem incrível longevidade e  
                 força de vida. Além disso, possuem grandes reservas de chakra e uma recuperação  
                 incrivelmente rápida após serem feridos."
-                forca="+3"
-                agilidade="+6"
-                resiliencia="+15"
-                magia="+7"
-                furtividade="+5"
+                forca="+7"
+                agilidade="+8"
+                inteligencia="+3"
+                chakra="+8"
+                estamina="+7"
               />
               <Atributo
                 posicao="sixth"
@@ -163,11 +155,11 @@ function Personagem() {
                 clã conseguem se comunicar através de telepatia. Durante as guerras ninja,  
                 este clã ganhou destaque por sua facilidade em retirar informações de  
                 bases inimigas."
-                forca="+2"
-                agilidade="+9"
-                resiliencia="+3"
-                magia="+10"
-                furtividade="+13"
+                forca="+5"
+                agilidade="+5"
+                inteligencia="+6"
+                chakra="+8"
+                estamina="+6"
               />
             </Tab.Content>
           </Tab.Container>
@@ -176,7 +168,7 @@ function Personagem() {
 
       {/* Div que contêm a escolha de classe */}
       <div className="atribute">
-        <h3>Escolha sua classe:</h3>
+        <h3>Escolha sua técnica:</h3>
         <div className="atributeselect">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
@@ -193,11 +185,11 @@ function Personagem() {
                 img="images/Personagem/Tecnica/ninjutsu.png"
                 text="O Ninjutsu molda o chakra de acordo com o que o usuário deseja, podendo combinar
                 com elementos da natureza, usar para cura ou outra das diversas possibilidades."
-                forca="+3"
-                agilidade="+7"
-                resiliencia="+3"
-                magia="+15"
-                furtividade="+5"            
+                forca="+5"
+                agilidade="+5"
+                inteligencia="+4"
+                chakra="+8"
+                estamina="+8"            
               />
               <Atributo
                 posicao="second"
@@ -206,11 +198,11 @@ function Personagem() {
                 text="O Taijutsu é uma forma básica de técnicas e refere-se a qualquer técnica que 
                 envolva artes marciais ou a otimização das habilidades humanas naturais. Não requer 
                 uso de chakra."
-                forca="+10"
-                agilidade="+6"
-                resiliencia="+8"
-                magia="+0"
-                furtividade="+3"
+                forca="+8"
+                agilidade="+7"
+                inteligencia="+5"
+                chakra="+0"
+                estamina="+10"
               />
               <Atributo
                 posicao="third"
@@ -219,11 +211,11 @@ function Personagem() {
                 text="O Genjutsu controla o fluxo de chakra no cérebro do oponente causando uma 
                 pertubação dos sentidos, induzindo a pessoa a sentir dor ou algum trauma e afetar 
                 seu psicológico."
-                forca="+3"
-                agilidade="+7"
-                resiliencia="+4"
-                magia="+10"
-                furtividade="+6"
+                forca="+7"
+                agilidade="+3"
+                inteligencia="+9"
+                chakra="+6"
+                estamina="+6"
               />
             </Tab.Content>
           </Tab.Container>

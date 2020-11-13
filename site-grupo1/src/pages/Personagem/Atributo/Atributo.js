@@ -30,16 +30,16 @@ function Atributo(props) {
                                     <td>{props.agilidade}</td>
                                 </tr>
                                 <tr>
-                                    <td>Resiliência</td>
-                                    <td>{props.resiliencia}</td>
+                                    <td>Inteligência</td>
+                                    <td>{props.inteligencia}</td>
                                 </tr>
                                 <tr>
-                                    <td>Magia</td>
-                                    <td>{props.magia}</td>
+                                    <td>Chakra</td>
+                                    <td>{props.chakra}</td>
                                 </tr>
                                 <tr>
-                                    <td>Furtividade</td>
-                                    <td>{props.furtividade}</td>
+                                    <td>Estamina</td>
+                                    <td>{props.estamina}</td>
                                 </tr>
                             </tbody>
                         </Table>
