@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Button } from "react-bootstrap";
 
 const baseUrl = "http://localhost:3001/users";
 const initialState = {
@@ -25,6 +26,11 @@ export default class UserInfo extends Component {
       this.setState({ list: resp.data });
     });
   }
+  getUpdatedList(user, add = true) {
+    const list = this.state.list.filter((u) => u.id !== user.id);
+    if (add) list.unshift(user);
+    return list;
+  }
   render() {
     let auxNome = "";
     let auxGender = "";
@@ -44,6 +50,21 @@ export default class UserInfo extends Component {
         <p>Gênero: {auxGender}</p>
         <p>Clã: {auxCla}</p>
         <p>Técnica: {auxTec}</p>
+        <Button
+          onClick={() => {
+            this.state.list.map((user) => {
+              user.on = "0";
+              const method = user.id ? "put" : "post";
+              const url = user.id ? `${baseUrl}/${user.id}` : baseUrl;
+              axios[method](url, user).then((resp) => {
+                const list = this.getUpdatedList(resp.data);
+                this.setState({ user: initialState.user, list });
+              });
+            });
+          }}
+        >
+          Deslogar
+        </Button>
       </div>
     );
   }

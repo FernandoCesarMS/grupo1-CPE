@@ -1,6 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import Nav from 'react-bootstrap/Nav';
 import { useState, useEffect } from "react";
+import axios from "axios";
+
 
 function Lista(props) {
     const [escolhaGen, setEscolhaGen] = useState("Kunoichi");

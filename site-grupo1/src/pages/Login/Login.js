@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import MenuLogin from "./MenuLogin"
+import MenuLogin from "./MenuLogin";
 import { Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import "./Login.css";
@@ -27,6 +27,11 @@ export default class Login extends Component {
     axios(baseUrl).then((resp) => {
       this.setState({ list: resp.data });
     });
+  }
+  getUpdatedList(user, add = true) {
+    const list = this.state.list.filter((u) => u.id !== user.id);
+    if (add) list.unshift(user);
+    return list;
   }
   renderLogin() {
     let auxUsername = "";
