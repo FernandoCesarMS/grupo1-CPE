@@ -20,13 +20,16 @@ const initialState = {
     cpf: "",
     username: "",
     senha: "",
-    on: "0",
+    senha2: "",
+    on: "1",
     Cla: "",
     Genero: "",
     Tecnica: "",
   },
   list: [],
 };
+let senhax = "";
+let senhay = "";
 
 export default class Cadastro extends Component {
   state = { ...initialState };
@@ -58,7 +61,6 @@ export default class Cadastro extends Component {
     this.setState({ user });
   }
   renderForm() {
-    let senha2 = "";
     return (
       <div className="baseCAD">
         <div className="corpoCAD">
@@ -138,37 +140,43 @@ export default class Cadastro extends Component {
                 <Form.Label>Confirme sua senha</Form.Label>
                 <Form.Control
                   type="password"
+                  name="senha2"
+                  value={this.state.user.senha2}
                   placeholder="Digite sua senha"
-                  onChange={(e) => (senha2 = e.target.value)}
+                  onChange={(event) => {
+                    this.updateField(event);
+                  }}
                 />
               </Form.Group>
             </Form.Row>
             <Form.Group as={Col} controlId="Cadast">
               <Button
-                variant="success"
+                variant=""
                 type="Cadastrar"
                 onClick={(e) => {
                   if (
-                    senha2 === this.state.user.senha &&
+                    this.state.user.senha2 === this.state.user.senha &&
                     this.state.user.username !== "" &&
                     this.state.user.email !== ""
                   ) {
                     alert("Usuario Cadastrado");
+                    this.state.list.map((user) => {
+                      user.on = "0";
+                      const method = user.id ? "put" : "post";
+                      const url = user.id ? `${baseUrl}/${user.id}` : baseUrl;
+                      axios[method](url, user).then((resp) => {
+                        const list = this.getUpdatedList(resp.data);
+                        this.setState({ user: initialState.user, list });
+                      });
+                    });
                     this.save(e);
-                  } else if (senha2 !== this.state.user.senha)
-                    alert("Senhas diferentes");
-                  else if (this.state.user.username === "")
-                    alert("Nome de Usuário inválido");
-                  else if (this.state.user.email === "")
-                    alert("Email inválido");
+                  } else alert("Cadastro Imcompleto/Inválido!");
                 }}
               >
-                Cadastrar
+                <Redireciona validar={this.state.user}></Redireciona>
               </Button>
             </Form.Group>
-            <Form.Group as={Col} controlId="Avancar">
-              <Redireciona />
-            </Form.Group>
+            <Form.Group as={Col} controlId="Avancar"></Form.Group>
           </Form>
         </div>
       </div>

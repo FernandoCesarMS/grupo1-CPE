@@ -6,7 +6,17 @@ function Redireciona(props) {
   const history = useHistory();
   return (
     <div>
-      <Button variant="primary" onClick={(e) => {history.push("/PersonagemGenero")}}> Escolha seu Personagem</Button>
+      <Button
+        variant="success"
+        onClick={(e) => {
+          if (props.validar.senha === props.validar.senha2 && props.validar.email !== "" && props.validar.username !== ""){
+            history.push("./PersonagemCla")
+          } 
+        }}
+      >
+        {" "}
+        Cadastrar{" "}
+      </Button>
     </div>
   );
 }
