@@ -12,6 +12,32 @@
       "Genero": "",
       "Tecnica": "",
       "id": 1
+    },
+    {
+      "name": "Raphael Henrique Braga Leivas",
+      "idade": "19",
+      "email": "raphaelleivas@cpejr.com.br",
+      "cpf": "123123123",
+      "username": "Potato",
+      "senha": "senha",
+      "on": "1",
+      "Cla": "",
+      "Genero": "",
+      "Tecnica": "",
+      "id": 2
+    },
+    {
+      "name": "teste1",
+      "idade": "19",
+      "email": "blabla@gmail.com",
+      "cpf": "123123",
+      "username": "teste11",
+      "senha": "1",
+      "on": "1",
+      "Cla": "",
+      "Genero": "",
+      "Tecnica": "",
+      "id": 3
     }
   ]
 }

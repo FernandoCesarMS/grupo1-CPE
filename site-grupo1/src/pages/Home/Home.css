@@ -1,3 +1,11 @@
+/*.MuiTabs-flexContainer.MuiTabs-centered{
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiButtonBase-root.MuiTab-root.MuiTab-textColorInherit{
+    width: 5vw;
+} */
 .baseHOME{
     height: 300vh;
 

@@ -18,9 +18,9 @@ function PersonagemClasse() {
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
                         <Nav variant="pills" className="flex-column">
-                            <Lista posicao="first" nome="Ninjutsu" />
-                            <Lista posicao="second" nome="Taijutsu" />
-                            <Lista posicao="third" nome="Genjutsu" />
+                            <Lista posicao="first" nome="Ninjutsu" atributo="classe" />
+                            <Lista posicao="second" nome="Taijutsu" atributo="classe"/>
+                            <Lista posicao="third" nome="Genjutsu" atributo="classe"/>
                         </Nav>
 
                         <Tab.Content>

@@ -18,12 +18,12 @@ function PersonagemCla() {
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
                         <Nav variant="pills" className="flex-column">
-                            <Lista posicao="first" nome="Akimichi" />
-                            <Lista posicao="second" nome="Hyuga" />
-                            <Lista posicao="third" nome="Inuzuka" />
-                            <Lista posicao="fourth" nome="Uchiha" />
-                            <Lista posicao="fifth" nome="Uzumaki" />
-                            <Lista posicao="sixth" nome="Yamanaka" />
+                            <Lista posicao="first" nome="Akimichi" atributo="cla" />
+                            <Lista posicao="second" nome="Hyuga" atributo="cla"/>
+                            <Lista posicao="third" nome="Inuzuka" atributo="cla"/>
+                            <Lista posicao="fourth" nome="Uchiha" atributo="cla"/>
+                            <Lista posicao="fifth" nome="Uzumaki" atributo="cla"/>
+                            <Lista posicao="sixth" nome="Yamanaka" atributo="cla"/>
                         </Nav>
 
                         <Tab.Content>

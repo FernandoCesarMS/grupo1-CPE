@@ -18,8 +18,8 @@ function PersonagemGenero() {
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
                         <Nav variant="pills" className="flex-column">
-                            <Lista posicao="first" nome="Kunoichi" />
-                            <Lista posicao="second" nome="Shinobi" />
+                            <Lista posicao="first" nome="Kunoichi" atributo="genero"/>
+                            <Lista posicao="second" nome="Shinobi" atributo="genero"/>
                         </Nav>
 
                         <Tab.Content>
