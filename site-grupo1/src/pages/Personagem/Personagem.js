@@ -1,7 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import Cartao from "./Cartao";
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 import Lista from "./Lista/Lista";

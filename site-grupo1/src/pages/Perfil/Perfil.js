@@ -68,7 +68,7 @@ function Perfil(props) {
         {/* Div que contêm as informações do perfil */}
         <div className={classes1.imagemPrincipal}>
           {/* Div que contêm a imagem do personagem */}
-          <Avatar src="/broken-image.jpg" />
+          <Avatar src='images/Personagem/Genero/shinobi4.png' />
         </div>
         <div className="text">
           <UserInfo

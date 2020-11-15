@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Avatar from "@material-ui/core/Avatar";
+import { makeStyles } from "@material-ui/core";
 import { Button } from "react-bootstrap";
 
 const baseUrl = "http://localhost:3001/users";
@@ -18,6 +20,18 @@ const initialState = {
   },
   list: [],
 };
+
+const useStyles1 = makeStyles((theme) => ({
+  imagemPrincipal: {
+    // Defina como será a imagem
+    display: "flex",
+    "& > *": {
+      margin: theme.spacing(5), // Afasta os outros componentes
+      width: theme.spacing(30), // Largura da imagem
+      height: theme.spacing(30), // Altura da imagem
+    },
+  },
+}));
 
 export default class UserInfo extends Component {
   state = { ...initialState };
@@ -40,6 +54,9 @@ export default class UserInfo extends Component {
     lista = this.state.list.filter(function (p) {
       if (p.on === "1") {
         auxNome = p.username;
+        auxGender = p.Genero;
+        auxCla = p.Cla;
+        auxTec = p.Tecnica;
       }
       return p.on === "1";
     });
@@ -51,6 +68,7 @@ export default class UserInfo extends Component {
         <p>Clã: {auxCla}</p>
         <p>Técnica: {auxTec}</p>
         <Button
+          variant="success"
           onClick={() => {
             this.state.list.map((user) => {
               user.on = "0";
