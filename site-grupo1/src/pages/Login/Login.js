@@ -1,171 +1,99 @@
-import React from "react";
-import { useHistory, Link } from "react-router-dom";
+import React, { Component } from "react";
+import axios from "axios";
+import MenuLogin from "./MenuLogin"
+import { Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import "./Login.css";
 
-import PropTypes from "prop-types";
-import "../Menu/Menu.css";
-import {
-  makeStyles,
-  AppBar,
-  Tabs,
-  Tab,
-  Typography,
-  Box,
-  useScrollTrigger,
-  Slide,
-} from "@material-ui/core";
-
-function EscondeBarra(props) {
-  const { children, window } = props;
-  const trigger = useScrollTrigger({ target: window ? window() : undefined });
-
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: '#2e1534',
+const baseUrl = "http://localhost:3001/users";
+const initialState = {
+  user: {
+    name: "",
+    idade: "",
+    email: "",
+    cpf: "",
+    username: "",
+    senha: "",
+    on: "0",
+    Cla: "",
+    Genero: "",
+    Tecnica: "",
   },
-}));
-
-function Menu(props) {
-  const classes = useStyles();
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-  const history = useHistory();
-
-  return (
-    <div className={classes.root}>
-      <EscondeBarra {...props}>
-        <AppBar position="fixed">
-          <Tabs
-            onChange={handleChange}
-            aria-label="menu-superior"
-            centered
-          >
-            <Tab 
-              label="História"
-              onClick={() => {
-                history.push("Historia");
-              }}
-            />
-            <Tab
-              label="Perfil"
-              onClick={() => {
-                history.push("Perfil");
-              }}
-            />
-            <Tab
-              label="Home"
-              onClick={() => {
-                history.push("Home");
-              }}
-            />
-            <Tab
-              style = {{fontWeight: "bold", fontSize: 15, color: '#FFA500',}}
-              label="Login"
-              onClick={() => {
-                history.push("Login");
-              }}
-            />
-            <Tab
-              label="Cadastro"
-              onClick={() => {
-                history.push("Cadastro");
-              }}
-            />
-          </Tabs>
-        </AppBar>
-      </EscondeBarra>
-      {props.children}
-
+  list: [],
+};
+export default class Login extends Component {
+  state = { ...initialState };
+  componentWillMount() {
+    axios(baseUrl).then((resp) => {
+      this.setState({ list: resp.data });
+    });
+  }
+  renderLogin() {
+    let auxUsername = "";
+    let auxPassword = "";
+    let newList = [];
+    return (
+      /* Foi utilizado o componente Form do Bootstrap para implementar o formulário de Cadastro do usuário */
       <div className="baseLOG">
-      <div className="corpoLOG">
-        <Form>
-          <Form.Group controlId="username">
-            <Form.Label>Nome de usuário</Form.Label>
-            <Form.Control type="username" placeholder="Nome de usuário" />
-          </Form.Group>
-
-          <Form.Group controlId="senha">
-            <Form.Label>Senha</Form.Label>
-            <Form.Control type="password" placeholder="Senha" />
-          </Form.Group>
-
-          <Button
-            variant="primary"
-            type="login"
-            onClick={() => {
-              history.push("/Perfil");
-            }}>
-            LOGIN
-          </Button>
-
-          <br /> <br />
-          <input id="logar" type="checkbox"/>
-          <label htmlFor="logar">Mantenha-me logado</label>
-
-          <center>
-            <p>Ainda não tem uma conta? </p>
-            <Link to="/Cadastro">Criar uma nova conta</Link>
-          </center>
-          
-        </Form>
+        <div className="corpoLOG">
+          <h1>Login</h1>
+          <Form>
+            <Form.Group controlId="username">
+              <Form.Label>Nome de usuário</Form.Label>
+              <Form.Control
+                type="username"
+                placeholder="Nome de usuário"
+                onChange={(e) => (auxUsername = e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId="senha">
+              <Form.Label>Senha</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Senha"
+                onChange={(e) => (auxPassword = e.target.value)}
+              />
+            </Form.Group>
+            <Button
+              variant="primary"
+              type="login"
+              onClick={() => {
+                newList = this.state.list.filter(function (p) {
+                  return p.username === auxUsername;
+                });
+                if (newList.length > 0 && newList[0].senha === auxPassword) {
+                  alert("Entrou!");
+                  newList[0].on = "1";
+                  const user = newList[0];
+                  const method = user.id ? "put" : "post";
+                  const url = user.id ? `${baseUrl}/${user.id}` : baseUrl;
+                  axios[method](url, user).then((resp) => {
+                    const list = this.getUpdatedList(resp.data);
+                    this.setState({ user: initialState.user, list });
+                  });
+                } else alert("Login inválido");
+              }}
+            >
+              LOGIN
+            </Button>
+            <br /> <br />
+            <input id="logar" type="checkbox" />
+            <label htmlFor="logar">Mantenha-me logado</label>
+            <center>
+              <p>Ainda não tem uma conta? </p>
+              <Link to="/Cadastro">Criar uma nova conta</Link>
+            </center>
+          </Form>
+        </div>
       </div>
-    </div>
-    </div>
-  );
-}
-
-export default Menu;
-
-
-function Login() {
-  const history = useHistory();
-
-  return (
-    <div className="baseLOG">
-      <div className="corpoLOG">
-        <Form>
-          <Form.Group controlId="username">
-            <Form.Label>Nome de usuário</Form.Label>
-            <Form.Control type="username" placeholder="Nome de usuário" />
-          </Form.Group>
-
-          <Form.Group controlId="senha">
-            <Form.Label>Senha</Form.Label>
-            <Form.Control type="password" placeholder="Senha" />
-          </Form.Group>
-
-          <Button
-            variant="primary"
-            type="login"
-            onClick={() => {
-              history.push("/Perfil");
-            }}>
-            LOGIN
-          </Button>
-
-          <br /> <br />
-          <input id="logar" type="checkbox"/>
-          <label htmlFor="logar">Mantenha-me logado</label>
-
-          <center>
-            <p>Ainda não tem uma conta? </p>
-            <Link to="/Cadastro">Criar uma nova conta</Link>
-          </center>
-          
-        </Form>
+    );
+  }
+  render() {
+    return (
+      <div>
+        <MenuLogin />
+        {this.renderLogin()}
       </div>
-    </div>
-  );
+    );
+  }
 }

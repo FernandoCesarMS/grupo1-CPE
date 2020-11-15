@@ -62,13 +62,13 @@ function MenuCadastro(props) {
               }}
             />
             <Tab
+              style={{ fontWeight: "bold", fontSize: 15, color: "#FFA500" }}
               label="Login"
               onClick={() => {
                 history.push("Login");
               }}
             />
             <Tab
-              style={{ fontWeight: "bold", fontSize: 15, color: "#FFA500" }}
               label="Cadastro"
               onClick={() => {
                 history.push("Cadastro");
