@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Perfil from "./pages/Perfil";
 import Menu from "./pages/Menu";
-import Personagem from "./pages/Personagem";
 import PersonagemCla from "./pages/Personagem/PersonagemCla";
 import PersonagemGenero from "./pages/Personagem/PersonagemGenero";
 import PersonagemClasse from "./pages/Personagem/PersonagemClasse";

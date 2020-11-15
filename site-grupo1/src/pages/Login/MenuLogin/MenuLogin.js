@@ -5,8 +5,6 @@ import {
   AppBar,
   Tabs,
   Tab,
-  Typography,
-  Box,
   useScrollTrigger,
   Slide,
 } from "@material-ui/core";
@@ -33,7 +31,7 @@ function MenuCadastro(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (newValue) => {
     setValue(newValue);
   };
   const history = useHistory();

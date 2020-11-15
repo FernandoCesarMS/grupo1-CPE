@@ -3,15 +3,12 @@ import Avatar from "@material-ui/core/Avatar";
 import "./Perfil.css";
 import UserInfo from "./UserInfo";
 
-import PropTypes from "prop-types";
 import "../Menu/Menu.css";
 import {
   makeStyles,
   AppBar,
   Tabs,
   Tab,
-  Typography,
-  Box,
   useScrollTrigger,
   Slide,
 } from "@material-ui/core";
