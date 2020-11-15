@@ -1,14 +1,33 @@
 .baseLOG{
     height: 100vh;
+
     display: flex;
     flex-direction: row;
+
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgb(240, 194, 110), white);
+    
+    background-image: linear-gradient(rgb(240, 194, 110), white); 
 }
 
 .corpoLOG{
     width: 40%;
-    margin: 0 auto;
 }
 
+@media screen and (max-width: 700px){
+    .corpoLOG{
+        width: 90%;
+    }
+}
+
+@media screen and (max-height: 450px){
+    .corpoLOG{
+        margin-top: 25vh;
+    }
+}
+
+@media screen and (max-height: 350px){
+    .corpoLOG{
+        margin-top: 35vh;
+    }
+}

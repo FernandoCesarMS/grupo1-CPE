@@ -1,4 +1,24 @@
 .bold{
     font-weight: bold;
     color: black;
+    font-size: small;
+}
+
+.text{
+    text-align: center;
+    font-size: small;
+
+    margin: 0.25em 0px;
+}
+
+.carousel{
+    width: 50vw;
+    height: 50vw;
+}
+
+@media screen and (max-width: 500px){
+    .carousel{
+        width: 80vw;
+        height: 80vw;
+    }
 }

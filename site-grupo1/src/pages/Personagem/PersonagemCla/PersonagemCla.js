@@ -13,7 +13,7 @@ function PersonagemCla() {
     return (
         <div className="baseAtr">
             <div className="atribute">
-                <h3 class = "atributeH">Escolha seu clã:</h3>
+                <h3>Escolha seu clã:</h3>
                 <div className="atributeselect">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
 
@@ -35,11 +35,11 @@ function PersonagemCla() {
                                 no qual conseguem expandir as partes ou o corpo inteiro, aumentando a massa muscular.  
                                 A força física e velocidade também são drasticamente aumentadas com a expansão,  
                                 permitindo socos esmagadores com a expansão do punho."
-                                forca="+12"
+                                forca="+6"
                                 agilidade="+5"
-                                resiliencia="+10"
-                                magia="+0"
-                                furtividade="+0"
+                                inteligencia="+5"
+                                chakra="+8"
+                                estamina="+6"
                             />
                             <Atributo
                                 posicao="second"
@@ -49,11 +49,11 @@ function PersonagemCla() {
                                 campos extensos de visão e a capacidade de ver através de objetos sólidos e até mesmo  
                                 o sistema circulatório chakra, sendo uma importante ténica de ataque, onde é focado nos  
                                 pontos de chakra mais importantes."
-                                forca="+3"
-                                agilidade="+6"
-                                resiliencia="+4"
-                                magia="+8"
-                                furtividade="+7"
+                                forca="+6"
+                                agilidade="+8"
+                                inteligencia="+7"
+                                chakra="+6"
+                                estamina="+3"
                             />
                             <Atributo
                                 posicao="third"
@@ -64,10 +64,10 @@ function PersonagemCla() {
                                 seu clã. Possuem habilidade de rastreamento através do faro, muito útil na perseguição 
                                 de um inimigo."
                                 forca="+6"
-                                agilidade="+3"
-                                resiliencia="+4"
-                                magia="+1"
-                                furtividade="+10"
+                                agilidade="+9"
+                                inteligencia="+4"
+                                chakra="+4"
+                                estamina="+7"
                             />
                             <Atributo
                                 posicao="fourth"
@@ -77,11 +77,11 @@ function PersonagemCla() {
                                 de serem portadores do kekkei genkai Sharingan, que lhes permite ganhar diversas vantagens,  
                                 como copiar jutsus do oponente, percepção avançada em camo de batalha, e outras várias  
                                 técnicas que podem ser aprimoradas."
-                                forca="+4"              
-                                agilidade="+9"
-                                resiliencia="+3"
-                                magia="+3"
-                                furtividade="+6"
+                                forca="+6"
+                                agilidade="+5"
+                                inteligencia="+9"
+                                chakra="+5"
+                                estamina="+5"
                             />
                             <Atributo
                                 posicao="fifth"
@@ -91,11 +91,11 @@ function PersonagemCla() {
                                 de objetos, chakra e seres vivos. Os membros deste clã possuem incrível longevidade e  
                                 força de vida. Além disso, possuem grandes reservas de chakra e uma recuperação  
                                 incrivelmente rápida após serem feridos."
-                                forca="+3"
-                                agilidade="+6"
-                                resiliencia="+15"
-                                magia="+7"
-                                furtividade="+5"
+                                forca="+7"
+                                agilidade="+5"
+                                inteligencia="+3"
+                                chakra="+8"
+                                estamina="+7"
                             />
                             <Atributo
                                 posicao="sixth"
@@ -106,37 +106,38 @@ function PersonagemCla() {
                                 clã conseguem se comunicar através de telepatia. Durante as guerras ninja,  
                                 este clã ganhou destaque por sua facilidade em retirar informações de  
                                 bases inimigas."
-                                forca="+2"
-                                agilidade="+9"
-                                resiliencia="+3"
-                                magia="+10"
-                                furtividade="+13"
+                                forca="+5"
+                                agilidade="+5"
+                                inteligencia="+6"
+                                chakra="+8"
+                                estamina="+6"
                             />
                         </Tab.Content>
                     </Tab.Container>
                 </div>
-            </div>
-            <div className="botoes">
-                <Button
-                    variant="danger"
-                    type="prox"
-                    onClick={() => {
-                        history.push("/Cadastro");
-                    }}
+                <div className="botoes">
+                    <Button
+                        variant="danger"
+                        type="prox"
+                        onClick={() => {
+                            history.push("/PersonagemGenero");
+                        }}
+                        >
+                        Voltar
+                    </Button>
+                    <Button
+                        variant="success"
+                        type="prox"
+                        onClick={() => {
+                            history.push("/PersonagemClasse");
+                        }}
                     >
-                    Voltar
-                </Button>
-                <Button
-                    variant="success"
-                    type="prox"
-                    onClick={() => {
-                        history.push("/PersonagemGenero");
-                    }}
-                    >
-                    Selecionar
-              </Button>
+                        Próxima
+                    </Button>
+                </div>
             </div>
         </div>
+
     );
 }
 
