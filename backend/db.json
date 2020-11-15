@@ -1,16 +1,29 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "name": "Fernando Cesar",
-        "email": "f@gmail.com",
-        "idade": "21"
-      },
-      {
-        "id": 2,
-        "name": "Caio Morbeck",
-        "email": "c@gmai.com",
-        "idade": "19"
-      }
-    ]
-  }
+  "users": [
+    {
+      "id": 1,
+      "name": "Fernando Cesar",
+      "email": "f@gmail.com",
+      "idade": "21"
+    },
+    {
+      "id": 2,
+      "name": "Caio Morbeck",
+      "email": "c@gmai.com",
+      "idade": "19"
+    },
+    {
+      "name": "Fernando Cesar de Macedo Silva",
+      "idade": "21",
+      "email": "CPEFernando@gmail.com",
+      "cpf": "123.345.567-78",
+      "username": "CPEFernando",
+      "senha": "CPE123",
+      "on": "0",
+      "Cla": "",
+      "Genero": "",
+      "Tecnica": "",
+      "id": 3
+    }
+  ]
+}

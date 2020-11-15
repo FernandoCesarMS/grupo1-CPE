@@ -1,40 +1,9 @@
-import React from "react";
-import { useState } from "react";
+import React, { Component } from "react";
 import { Form, Button, Col } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
-import Campo from "./Campo";
+import Redireciona from "./Redireciona";
+import MenuCadastro from "./MenuCadastro";
+import axios from "axios";
 import "./Cadastro.css";
-
-import PropTypes from "prop-types";
-import "../Menu/Menu.css";
-import {
-  makeStyles,
-  AppBar,
-  Tabs,
-  Tab,
-  Typography,
-  Box,
-  useScrollTrigger,
-  Slide,
-} from "@material-ui/core";
-
-function EscondeBarra(props) {
-  const { children, window } = props;
-  const trigger = useScrollTrigger({ target: window ? window() : undefined });
-
-  return (
-    <Slide appear={false} direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  );
-}
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: '#2e1534',
-  },
-}));
 
 /*
 A página Cadastro tem como função possibilitar a criação de um perfil pelo usuário
@@ -42,162 +11,178 @@ com dados como Nome, Idade, CPF etc.
 A implementação, atualmente, utiliza o componente Campo, com alguns componentes
 do framework Bootstrap
 */
-function Cadastro(props) {
-  const [nome, setNome] = useState("");
-  const [idade, setIdade] = useState("");
-  const [CPF, setCPF] = useState("");
-  const [usuario, setUsuario] = useState("");
-  const [email, setEmail] = useState("");
-  const [senha1, setSenha1] = useState(0);
-  const [senha2, setSenha2] = useState(1);
-  const history = useHistory();
+const baseUrl = "http://localhost:3001/users"; //Endereço do Banco de Dados
+const initialState = {
+  user: {
+    name: "",
+    idade: "",
+    email: "",
+    cpf: "",
+    username: "",
+    senha: "",
+    on: "0",
+    Cla: "",
+    Genero: "",
+    Tecnica: "",
+  },
+  list: [],
+};
 
-  const classes = useStyles();
-    const [value, setValue] = React.useState(0);
+export default class Cadastro extends Component {
+  state = { ...initialState };
 
-    const handleChange = (event, newValue) => {
-      setValue(newValue);
-    };
-    
+  componentWillMount() {
+    axios(baseUrl).then((resp) => {
+      this.setState({ list: resp.data });
+    });
+  }
+  save() {
+    const user = this.state.user;
+    const method = user.id ? "put" : "post";
+    const url = user.id ? `${baseUrl}/${user.id}` : baseUrl;
+    axios[method](url, user).then((resp) => {
+      const list = this.getUpdatedList(resp.data);
+      this.setState({ user: initialState.user, list });
+    });
+  }
 
-  return (
-    <div className="baseCAD">
-      <div className="corpoCAD">
-        <Form>
-          <Form.Group controlId="NomeCompleto">
-            <Form.Label>Nome Completo</Form.Label>
-            <Form.Control
-              placeholder="Nome Completo"
-              onChange={(event) => {
-                setNome(event.target.value);
-              }}
-            />
-          </Form.Group>
-          <Form.Row>
-            <Form.Group as={Col} controlId="Idade">
-              <Form.Label>Idade</Form.Label>
+  getUpdatedList(user, add = true) {
+    const list = this.state.list.filter((u) => u.id !== user.id);
+    if (add) list.unshift(user);
+    return list;
+  }
+
+  updateField(event) {
+    const user = { ...this.state.user };
+    user[event.target.name] = event.target.value;
+    this.setState({ user });
+  }
+  renderForm() {
+    let senha2 = "";
+    return (
+      <div className="baseCAD">
+        <div className="corpoCAD">
+          <Form>
+            <Form.Group controlId="NomeCompleto">
+              <Form.Label>Nome Completo</Form.Label>
+              <input
+                type="text"
+                className="form-control"
+                name="name"
+                value={this.state.user.name}
+                onChange={(event) => this.updateField(event)}
+                placeholder="Nome Completo"
+              />
+            </Form.Group>
+            <Form.Row>
+              <Form.Group as={Col} controlId="Idade">
+                <Form.Label>Idade</Form.Label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="idade"
+                  value={this.state.user.idade}
+                  onChange={(event) => this.updateField(event)}
+                  placeholder="Idade"
+                />
+              </Form.Group>
+              <Form.Group as={Col} controlId="CPF">
+                <Form.Label>CPF</Form.Label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="cpf"
+                  value={this.state.user.cpf}
+                  onChange={(event) => this.updateField(event)}
+                  placeholder="CPF"
+                />
+              </Form.Group>
+            </Form.Row>
+            <Form.Group controlId="nomeUsuario">
+              <Form.Label>Nome de Usuário</Form.Label>
+              <input
+                type="text"
+                className="form-control"
+                name="username"
+                value={this.state.user.username}
+                onChange={(event) => this.updateField(event)}
+                placeholder="Nome de Usuário"
+              />
+            </Form.Group>
+            <Form.Group controlId="email">
+              <Form.Label>Endereço de email</Form.Label>
               <Form.Control
-                placeholder="Idade"
+                name="email"
+                placeholder="Endereço de email"
+                value={this.state.user.email}
                 onChange={(event) => {
-                  setIdade(event.target.value);
+                  this.updateField(event);
                 }}
               />
             </Form.Group>
-            <Form.Group as={Col} controlId="CPF">
-              <Form.Label>CPF</Form.Label>
-              <Form.Control
-                placeholder="CPF"
-                onChange={(event) => {
-                  setCPF(event.target.value);
-                }}
-              />
-            </Form.Group>
-          </Form.Row>
-          <Form.Group controlId="nomeUsuario">
-            <Form.Label>Nome de Usuário</Form.Label>
-            <Form.Control
-              placeholder="Nome de Usuário"
-              onChange={(event) => {
-                setUsuario(event.target.value);
-              }}
-            />
-          </Form.Group>
-          <Form.Group controlId="email">
-            <Form.Label>Endereço de email</Form.Label>
-            <Form.Control
-              placeholder="Endereço de email"
-              onChange={(event) => {
-                setEmail(event.target.value);
-              }}
-            />
-          </Form.Group>
-          <Form.Row>
-            <Form.Group as={Col} controlId="Senha">
-              <Form.Label>Crie sua senha</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Digite sua senha"
-                onChange={(event) => {
-                  setSenha1(event.target.value);
-                }}
-              />
-            </Form.Group>
+            <Form.Row>
+              <Form.Group as={Col} controlId="Senha">
+                <Form.Label>Crie sua senha</Form.Label>
+                <Form.Control
+                  type="password"
+                  name="senha"
+                  placeholder="Digite sua senha"
+                  value={this.state.user.senha}
+                  onChange={(event) => {
+                    this.updateField(event);
+                  }}
+                />
+              </Form.Group>
 
-            <Form.Group as={Col} controlId="SenhaConf">
-              <Form.Label>Confirme sua senha</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Digite sua senha"
-                onChange={(event) => {
-                  setSenha2(event.target.value);
+              <Form.Group as={Col} controlId="SenhaConf">
+                <Form.Label>Confirme sua senha</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Digite sua senha"
+                  onChange={(e) => (senha2 = e.target.value)}
+                />
+              </Form.Group>
+            </Form.Row>
+            <Form.Group as={Col} controlId="Cadast">
+              <Button
+                variant="success"
+                type="Cadastrar"
+                onClick={(e) => {
+                  if (
+                    senha2 === this.state.user.senha &&
+                    this.state.user.username !== "" &&
+                    this.state.user.email !== ""
+                  ) {
+                    alert("Usuario Cadastrado");
+                    this.save(e);
+                  } else if (senha2 !== this.state.user.senha)
+                    alert("Senhas diferentes");
+                  else if (this.state.user.username === "")
+                    alert("Nome de Usuário inválido");
+                  else if (this.state.user.email === "")
+                    alert("Email inválido");
                 }}
-              />
+              >
+                Cadastrar
+              </Button>
             </Form.Group>
-          </Form.Row>
-
-          <Button
-            variant="success"
-            type="Cadastrar"
-            onClick={() => {
-              if (senha1 !== senha2) alert("Senhas diferentes!");
-              else {
-                alert("Cadastrado!");
-                history.push("/PersonagemGenero");
-              }
-            }}
-          >
-            Cadastrar
-          </Button>
-        </Form>
+            <Form.Group as={Col} controlId="Avancar">
+              <Redireciona />
+            </Form.Group>
+          </Form>
+        </div>
       </div>
-
-      <div className={classes.root}>
-      <EscondeBarra {...props}>
-        <AppBar position="fixed">
-          <Tabs
-            onChange={handleChange}
-            aria-label="menu-superior"
-            centered
-          >
-            <Tab 
-              label="História"
-              onClick={() => {
-                history.push("Historia");
-              }}
-            />
-            <Tab
-              label="Perfil"
-              onClick={() => {
-                history.push("Perfil");
-              }}
-            />
-            <Tab
-              label="Home"
-              onClick={() => {
-                history.push("Home");
-              }}
-            />
-            <Tab
-              label="Login"
-              onClick={() => {
-                history.push("Login");
-              }}
-            />
-            <Tab
-              style = {{fontWeight: "bold", fontSize: 15, color: '#FFA500',}}
-              label="Cadastro"
-              onClick={() => {
-                history.push("Cadastro");
-              }}
-            />
-          </Tabs>
-        </AppBar>
-      </EscondeBarra>
-      {props.children}
-    </div>
-
-    </div>
-  );
+    );
+  }
+  render() {
+    return (
+      <div>
+        <MenuCadastro />
+        {this.renderForm()}
+      </div>
+    );
+  }
 }
+/*
 
-export default Cadastro;
+*/
