@@ -2,7 +2,7 @@ import React from "react";
 import Avatar from "@material-ui/core/Avatar";
 import "./Perfil.css";
 import UserInfo from "./UserInfo";
-
+import EscolherPersonagem from "./EscolherPersonagem";
 import "../Menu/Menu.css";
 import {
   makeStyles,
@@ -77,6 +77,7 @@ function Perfil(props) {
             Cla={props.Cla}
             Tecnica={props.Tecnica}
           />
+          <EscolherPersonagem/>
         </div>
       </div>
 
