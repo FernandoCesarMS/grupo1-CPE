@@ -13,7 +13,7 @@ function News() {
                 />
                 <Carousel.Caption>
                     <h3 className="text">Atualização 2.0</h3>
-                    <p className="text">Semana que vem chega uptade 2.0 como novos estilos de personagens. Confira!</p>
+                    <p className="text">Uptade 2.0 como novos estilos de personagens na próxima semana. Confira!</p>
                     <p className="text">04.11.2020</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -35,7 +35,7 @@ function News() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://wallpaperplay.com/walls/full/7/2/3/72592.jpg"
+                    src="http://st.gdefon.com/wallpapers_original/wallpapers/413779_(www.GdeFon.com).jpg"
                     alt="Third slide"
                 />
 
