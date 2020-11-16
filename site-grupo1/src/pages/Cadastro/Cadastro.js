@@ -151,7 +151,7 @@ export default class Cadastro extends Component {
             </Form.Row>
             <Form.Group as={Col} controlId="Cadast">
               <Button
-                variant=""
+                variant="success"
                 type="Cadastrar"
                 onClick={(e) => {
                   if (
@@ -170,10 +170,10 @@ export default class Cadastro extends Component {
                       });
                     });
                     this.save(e);
-                  } else alert("Cadastro Imcompleto/Inválido!");
+                  } else alert("Cadastro Incompleto/Inválido!");
                 }}
               >
-                <Redireciona validar={this.state.user}></Redireciona>
+                Cadastrar
               </Button>
             </Form.Group>
             <Form.Group as={Col} controlId="Avancar"></Form.Group>

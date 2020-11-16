@@ -6,7 +6,7 @@ function EscolherPersonagem(){
     const history = useHistory();
     return(
         <div>
-            <Button variant="success" type="Prox" onClick={() => {history.push("/PersonagemGenero")}} >Próxima</Button>
+            <Button variant="success" type="Prox" onClick={() => {history.push("/PersonagemGenero")}} >Escolher Personagem</Button>
         </div>
     );
 }

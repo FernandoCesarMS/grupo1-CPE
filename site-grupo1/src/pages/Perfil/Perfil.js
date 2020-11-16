@@ -77,6 +77,7 @@ function Perfil(props) {
             Cla={props.Cla}
             Tecnica={props.Tecnica}
           />
+          <br/>
           <EscolherPersonagem/>
         </div>
       </div>
