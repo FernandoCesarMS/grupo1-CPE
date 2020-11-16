@@ -1,14 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import News from "./News";
-
 import Server from "./Server";
-
 import { Button } from "react-bootstrap";
 import "./Home.css";
 
 import PropTypes from "prop-types";
-
 import "../Menu/Menu.css";
 import {
   makeStyles,

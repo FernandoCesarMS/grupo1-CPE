@@ -10,7 +10,7 @@ function Redireciona(props) {
         variant="success"
         onClick={(e) => {
           if (props.validar.senha === props.validar.senha2 && props.validar.email !== "" && props.validar.username !== ""){
-            history.push("./PersonagemGenero")
+            history.push("./PersonagemCla")
           } 
         }}
       >
